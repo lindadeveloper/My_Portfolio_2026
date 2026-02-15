@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  --base: #fafafa;
+  --text: #121212;
+}
+
+.nav-container {
+  height: 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  --base: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.content-container,
+.header-container {
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+header > nav > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+}
+
+header > nav > ul > li > a {
+  padding: 0.8rem;
+  transition: font-weight 0.3s ease;
+}
+
+header > h1 > a,
+header > nav > ul > li > a {
+  position: relative;
+  color: #121212;
+  text-decoration: none;
+}
+
+header > nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid rgb(144, 111, 182);
+  transition: all 0.3s ease-in-out;
+}
+
+header > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+header > nav > ul > li > a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul,
+nav {
+  list-style-type: none;
+  gap: 2rem;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.light-dark-switch::after {
+  content: "Light";
+}
+
+.light-dark-switch:hover::after {
+  content: "Dark";
+}
+
+.light-dark-switch {
+  padding: 0.6rem 1rem;
+  border-radius: 0.2rem 1rem;
+  border: 1px solid #121212;
+  background-color: #fafafa;
+  transition: all 0.3s;
+}
+
+.light-dark-switch:hover {
+  border-radius: 1rem 0.2rem;
+  background-color: #121212;
+  color: #fafafa;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: #121212;
+    --text: #fafafa;
+  }
+
+  .light-dark-switch::after {
+    content: "Dark";
+  }
+
+  .light-dark-switch:hover::after {
+    content: "Light";
+  }
+
+  .light-dark-switch {
+    background-color: #121212;
+  }
+
+  .light-dark-switch:hover {
+    background-color: #fafafa;
+    color: #121212;
+  }
+
+  .nav-container {
+    box-shadow: 0 2px 5px #3a3a3a;
+  }
+
+  header > nav > ul > li > a::after {
+    border-bottom: 3px solid #fafafa;
+  }
+
+  header > h1 > a,
+  header > nav > ul > li > a {
+    color: #fafafa;
+  }
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--base);
+  color: var(--text);
+}

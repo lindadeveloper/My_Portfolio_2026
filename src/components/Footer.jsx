@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <footer>&copy;2026 by Linda Liu . All rights reserved</footer>;
+  return (
+    <footer>
+      Built by Linda Liu • With React, deployed on Vercel • &copy;2026 All rights reserved
+    </footer>
+  );
 }
