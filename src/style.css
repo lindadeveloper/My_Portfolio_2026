@@ -9,8 +9,20 @@
   font-family: "Open Sans", sans-serif;
   --background-color: #fafafa;
   --text-color: #121212;
-  --background-toggleTheme: #121212;
-  --text-toggleTheme: #fafafa;
+  --background-toggle: #eeeeee;
+  --background-toggle-hover: #dbdbdb;
+  --text-toggle: #121212;
+  --border-bottom: #906fb6;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #fafafa;
+}
+
+[data-theme="light"] {
+  --background-color: #fafafa;
+  --text-color: #121212;
 }
 
 .nav-container {
@@ -71,7 +83,7 @@ header > nav > ul > li > a::after {
   width: 0;
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid rgb(144, 111, 182);
+  border-bottom: 2px solid var(--border-bottom);
   transition: all 0.3s ease-out;
 }
 
@@ -100,11 +112,12 @@ nav {
   border-radius: 1rem;
   border: none;
   transition: all 0.3s ease-out;
+  background-color: var(--background-toggle);
 }
 
 .darkModeToggle:hover {
-  background-color: var(--background-toggleTheme);
-  color: var(--text-toggleTheme);
+  background-color: var(--background-toggle-hover);
+  color: var(--text-toggle);
 }
 
 .toggleText {
@@ -119,8 +132,10 @@ footer {
   :root {
     --background-color: #121212;
     --text-color: #fafafa;
-    --background-toggleTheme: #fafafa;
+    --background-toggle-hover: #fafafa;
     --text-toggleTheme: #121212;
+    --background-toggle: #3d3d3d;
+    --border-bottom: #b492db;
   }
 
   .nav-container {
@@ -128,13 +143,12 @@ footer {
   }
 
   header > nav > ul > li > a::after {
-    border-bottom: 3px solid #fafafa;
+    border-bottom: 2px solid var(--border-bottom);
   }
 
-  /* header > h1 > a,
-  header > nav > ul > li > a {
-    color: #fafafa;
-  } */
+  .darkModeToggle:hover {
+    background-color: var(--background-toggle-hover);
+  }
 }
 
 html {
