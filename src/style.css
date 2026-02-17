@@ -7,8 +7,10 @@
 :root {
   height: 100vh;
   font-family: "Open Sans", sans-serif;
-  --base: #fafafa;
-  --text: #121212;
+  --background-color: #fafafa;
+  --text-color: #121212;
+  --background-toggleTheme: #121212;
+  --text-toggleTheme: #fafafa;
 }
 
 .nav-container {
@@ -16,7 +18,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  --base: #fafafa;
+  background-color: var(--background-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -27,7 +29,7 @@
 
 .content-container,
 .header-container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   width: 100%;
   height: 100%;
@@ -52,13 +54,14 @@ header > nav > ul > li {
 
 header > nav > ul > li > a {
   padding: 0.8rem;
+  font-weight: 400;
   transition: font-weight 0.3s ease;
 }
 
 header > h1 > a,
 header > nav > ul > li > a {
   position: relative;
-  color: #121212;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -69,7 +72,7 @@ header > nav > ul > li > a::after {
   left: 0;
   bottom: 0;
   border-bottom: 3px solid rgb(144, 111, 182);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
 }
 
 header > nav > ul > li > a:hover::after {
@@ -77,7 +80,7 @@ header > nav > ul > li > a:hover::after {
 }
 
 header > nav > ul > li > a:hover {
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -88,31 +91,24 @@ nav {
   display: flex;
 }
 
-button {
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.light-dark-switch::after {
-  content: "Light";
-}
-
-.light-dark-switch:hover::after {
-  content: "Dark";
-}
-
-.light-dark-switch {
+.darkModeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
   padding: 0.6rem 1rem;
-  border-radius: 0.2rem 1rem;
-  border: 1px solid #121212;
-  background-color: #fafafa;
-  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.3s ease-out;
 }
 
-.light-dark-switch:hover {
-  border-radius: 1rem 0.2rem;
-  background-color: #121212;
-  color: #fafafa;
+.darkModeToggle:hover {
+  background-color: var(--background-toggleTheme);
+  color: var(--text-toggleTheme);
+}
+
+.toggleText {
+  font-size: 1rem;
 }
 
 footer {
@@ -121,25 +117,10 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --base: #121212;
-    --text: #fafafa;
-  }
-
-  .light-dark-switch::after {
-    content: "Dark";
-  }
-
-  .light-dark-switch:hover::after {
-    content: "Light";
-  }
-
-  .light-dark-switch {
-    background-color: #121212;
-  }
-
-  .light-dark-switch:hover {
-    background-color: #fafafa;
-    color: #121212;
+    --background-color: #121212;
+    --text-color: #fafafa;
+    --background-toggleTheme: #fafafa;
+    --text-toggleTheme: #121212;
   }
 
   .nav-container {
@@ -150,10 +131,10 @@ footer {
     border-bottom: 3px solid #fafafa;
   }
 
-  header > h1 > a,
+  /* header > h1 > a,
   header > nav > ul > li > a {
     color: #fafafa;
-  }
+  } */
 }
 
 html {
@@ -161,6 +142,6 @@ html {
 }
 
 body {
-  background-color: var(--base);
-  color: var(--text);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

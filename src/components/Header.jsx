@@ -1,3 +1,5 @@
+import ToggleThemeButton from "./ToggleThemeButton";
+
 export default function Header() {
   return (
     <header>
@@ -7,7 +9,10 @@ export default function Header() {
       <nav className="navBar">
         <ul>
           <li>
-            <a href="">Work</a>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
           </li>
           <li>
             <a href="">About</a>
@@ -17,7 +22,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <button className="light-dark-switch"></button>
+      <ToggleThemeButton />
     </header>
   );
 }
