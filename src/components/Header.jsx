@@ -1,7 +1,7 @@
 import ToggleTheme from "./ToggleTheme";
 import { Link } from "react-router-dom";
 
-export default function Header({ darkTheme, toggleClick }) {
+export default function Header({ isDark, toggleClick }) {
   return (
     <header className="nav-container">
       <nav className="nav-bar">
@@ -28,7 +28,7 @@ export default function Header({ darkTheme, toggleClick }) {
             </Link>
           </li>
         </ul>
-        <ToggleTheme isDark={darkTheme} darkToggle={toggleClick} />
+        <ToggleTheme isDarkTheme={isDark} darkToggle={toggleClick} />
       </nav>
     </header>
   );
