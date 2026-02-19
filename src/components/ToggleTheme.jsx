@@ -7,7 +7,7 @@ export default function ToggleTheme({ isDark, darkToggle }) {
   return (
     <button role="switch" aria-checked={isDark} className="darkModeToggle" onClick={darkToggle}>
       {toggleIcon}
-      <div className="toggleText">{toggleText}</div>
+      <div className="toggleThemeText">{toggleText}</div>
     </button>
   );
 }
