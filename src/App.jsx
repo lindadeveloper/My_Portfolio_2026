@@ -1,36 +1,19 @@
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import ToggleTheme from "./components/ToggleTheme";
-import useLocalStorage from "use-local-storage";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Layout from "./components/Layout";
 
 export default function App() {
-  const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
   return (
-    <div className="app-container" data-theme={darkTheme ? "dark" : undefined}>
-      <header className="nav-container">
-        <nav className="nav-bar">
-          <h1 className="logo">
-            <a href="">Linda Liu</a>
-          </h1>
-          <ul className="nav-menu">
-            <li className="menu">
-              <a href="">Home</a>
-            </li>
-            <li className="menu">
-              <a href="">Projects</a>
-            </li>
-            <li className="menu">
-              <a href="">About</a>
-            </li>
-            <li className="menu">
-              <a href="">Contact</a>
-            </li>
-          </ul>
-          <ToggleTheme isDark={darkTheme} darkToggle={() => setDarkTheme(!darkTheme)} />
-        </nav>
-      </header>
-      <Main />
-      <Footer />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Layout>
   );
 }
