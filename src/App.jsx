@@ -18,7 +18,7 @@ export default function App() {
   const currentTheme = darkTheme ? "dark" : "light";
 
   return (
-    <ThemeContext.Provider value={{ currentTheme, themeToggle }}>
+    <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
       <BrowserRouter>
         <Layout>
           <Routes>

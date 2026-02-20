@@ -1,10 +1,7 @@
 import ToggleTheme from "./ToggleTheme";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../App";
-import { useContext } from "react";
 
 export default function Header() {
-  const { themeToggle } = useContext(ThemeContext);
   return (
     <header className="nav-container">
       <nav className="nav-bar">
@@ -31,7 +28,7 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <ToggleTheme isDarkToggled={themeToggle} />
+        <ToggleTheme />
       </nav>
     </header>
   );
