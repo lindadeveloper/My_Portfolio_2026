@@ -68,7 +68,6 @@
 
 .nav-menu {
   list-style-type: none;
-  gap: 3rem;
 }
 
 .logo,
@@ -140,6 +139,24 @@
 footer {
   text-align: center;
   padding: 3rem;
+}
+
+/*responsiveness for mobile devices*/
+@media (max-width: 480px) {
+}
+
+/*responsiveness for tablets and small laptops*/
+@media (min-width: 481px) and (max-width: 1024px) {
+  .nav-menu {
+    gap: 2rem;
+  }
+}
+
+/*responsiveness for large screens*/
+@media (min-width: 1025px) {
+  .nav-menu {
+    gap: 3rem;
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {

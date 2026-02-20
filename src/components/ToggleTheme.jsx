@@ -1,14 +1,15 @@
 import { Sun, Moon } from "lucide-react";
 
-export default function ToggleTheme({ isDarkTheme, darkToggle }) {
-  let toggleText = isDarkTheme ? "Dark" : "Light";
-  let toggleIcon = isDarkTheme ? <Moon size={16} /> : <Sun size={16} />;
+export default function ToggleTheme({ isDarkToggled }) {
+  let toggleText = isDarkToggled ? "Dark" : "Light";
+  let toggleIcon = isDarkToggled ? <Moon size={16} /> : <Sun size={16} />;
+
   return (
     <button
       role="switch"
-      aria-checked={isDarkTheme}
+      aria-checked={isDarkToggled}
       className="darkModeToggle"
-      onClick={darkToggle}
+      onClick={isDarkToggled}
     >
       {toggleIcon}
       <div className="toggleThemeText">{toggleText}</div>

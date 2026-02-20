@@ -1,14 +1,15 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Projects from "../pages/Projects";
-import useLocalStorage from "use-local-storage";
+import { ThemeContext } from "../App";
+import { useContext } from "react";
 
-export default function Layout() {
-  const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
+export default function Layout({ children }) {
+  const { currentTheme } = useContext(ThemeContext);
   return (
-    <div className="app-container" data-theme={darkTheme ? "dark" : "light"}>
-      <Header isDark={darkTheme} toggleClick={() => setDarkTheme(!darkTheme)} />
-      <Projects />
+    <div className="app-container" data-theme={currentTheme}>
+      <Header />
+      <main className="main-container">{children}</main>
       <Footer />
     </div>
   );
