@@ -15,9 +15,9 @@
   --main-text-color: #222222;
   --toggle-theme-btn-border: #bbbbbb;
   --toggle-theme-btn-bg-color: #fafafa;
-  --toggle-theme-btn-hover: #ebebeb;
+  --toggle-theme-btn-hover: #eeeeee;
   --toggle-theme-btn-text: #222222;
-  --menu-underline: #906fb6;
+  --menu-underline: #664c83;
   --box-nav-shadow: #ebebeb;
   --box-menu-shadow: #c2c2c2;
 }
@@ -93,11 +93,14 @@ html {
   display: none;
 }
 
+.logo-menu {
+  padding: 2rem;
+}
+
 .logo-menu,
 .projects,
 .about,
 .contact {
-  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,12 +112,23 @@ html {
   font-size: 1.2rem;
 }
 
+.projects:hover,
+.about:hover,
+.contact:hover {
+  font-size: 1.2rem;
+  font-weight: 650;
+  box-shadow: 0 0 10px var(--box-menu-shadow);
+}
+
 .nav-link {
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 2rem 4rem;
   color: var(--text-color);
   text-decoration: none;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .nav-container,
@@ -130,7 +144,6 @@ html {
 .footer {
   text-align: center;
   margin: 2rem;
-  border: 1px solif black;
 }
 
 /*to animate the menu item's underline on hover for more user friendliness*/
@@ -162,10 +175,14 @@ html {
   background-color: var(--toggle-theme-btn-bg-color);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburgerToggle:hover {
+  background-color: var(--toggle-theme-btn-hover);
 }
 
 .darkModeToggle {
-  margin: auto;
   display: flex;
   align-items: center;
   gap: 0.2rem;
@@ -182,7 +199,6 @@ html {
 
 .darkModeToggle:hover {
   background-color: var(--toggle-theme-btn-hover);
-  color: var(--toggle-theme-btn-text);
 }
 
 .toggleThemeText {
@@ -200,7 +216,6 @@ html {
   .footer {
     position: fixed;
     bottom: 0;
-    border: 1px solid black;
   }
 }
 
@@ -218,13 +233,11 @@ html {
   }
 
   .main-container {
-    border: 1px solid black;
   }
 
   .footer {
     position: fixed;
     bottom: 0;
-    border: 1px solid black;
   }
 }
 
