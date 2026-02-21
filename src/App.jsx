@@ -19,16 +19,18 @@ export default function App() {
 
   return (
     <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
+      <div className="body-container" data-theme={currentTheme}>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </div>
     </ThemeContext.Provider>
   );
 }

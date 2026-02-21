@@ -18,7 +18,8 @@
   --toggle-theme-btn-hover: #ebebeb;
   --toggle-theme-btn-text: #222222;
   --menu-underline: #906fb6;
-  --box-shadow: #ebebeb;
+  --box-nav-shadow: #ebebeb;
+  --box-menu-shadow: #c2c2c2;
 }
 
 [data-theme="dark"] {
@@ -30,70 +31,118 @@
   --toggle-theme-btn-hover: #293641;
   --toggle-theme-btn-text: #fafafa;
   --menu-underline: #5d7892;
-  --box-shadow: #293641;
+  --box-nav-shadow: #293641;
+  --box-menu-shadow: #5d7992;
 }
 
-.app-container {
+body {
+  display: block;
+}
+
+body,
+html {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.body-container {
   height: 100vh;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
 
-/*to keep everything together when it's displayed on larger screen*/
-.nav-bar,
-.content-container {
-  max-width: 1200px;
+.nav-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(8rem, auto) 1fr auto;
+}
+
+/*to keep the modal menu floated to the left*/
+.nav-menu {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  list-style-type: none;
+  background-color: var(--main-bg-color);
+  box-shadow: 0 0 5px var(--box-menu-shadow);
+  height: 100%;
+  width: 73%;
+}
+
+.logo,
+.theme-btn,
+.ham-btn {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  grid-column: span 2;
+  font-size: 1.5rem;
+}
+
+.ham-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.home {
+  display: none;
+}
+
+.logo-menu,
+.projects,
+.about,
+.contact {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects,
+.about,
+.contact {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  gap: 0.5rem;
 }
 
 .nav-container,
 .main-container {
+  margin: 0 2rem;
+}
+
+.footer-container {
   display: flex;
   justify-content: center;
 }
 
-.nav-container {
-  height: 8rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px var(--box-shadow);
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav-menu {
-  list-style-type: none;
-}
-
-.logo,
-.menu,
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo,
-.nav-link {
-  color: var(--text-color);
-  text-decoration: none;
+.footer {
+  text-align: center;
+  margin: 2rem;
+  border: 1px solif black;
 }
 
 /*to animate the menu item's underline on hover for more user friendliness*/
 
-.menu {
+/* .nav-link {
   position: relative;
   padding: 0.5rem 0.7rem;
   font-weight: 500;
   transition: font-weight 0.3s ease;
 }
 
-.menu::after {
+.nav-link::after {
   content: "";
   position: absolute;
   width: 0;
@@ -106,13 +155,21 @@
 .menu:hover::after {
   width: 100%;
   cursor: pointer;
+} */
+
+.hamburgerToggle {
+  border: 1px solid var(--toggle-theme-btn-border);
+  background-color: var(--toggle-theme-btn-bg-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .darkModeToggle {
+  margin: auto;
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   cursor: pointer;
   border-radius: 1rem;
   border: 1px solid var(--toggle-theme-btn-border);
@@ -131,31 +188,43 @@
 .toggleThemeText {
   font-size: 1rem;
 }
-
-.main-container {
-  padding: 3rem 0;
-}
-
-footer {
-  text-align: center;
-  padding: 3rem;
-}
-
 /*responsiveness for mobile devices*/
-@media (max-width: 480px) {
-}
+/* @media (max-width: 480px) {
+} */
 
 /*responsiveness for tablets and small laptops*/
 @media (min-width: 481px) and (max-width: 1024px) {
   .nav-menu {
     gap: 2rem;
   }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+  }
 }
 
 /*responsiveness for large screens*/
 @media (min-width: 1025px) {
+  .nav-container {
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px var(--box-shadow);
+  }
   .nav-menu {
     gap: 3rem;
+  }
+
+  .main-container {
+    border: 1px solid black;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
   }
 }
 
@@ -168,7 +237,7 @@ footer {
     --toggle-theme-btn-hover: #293641;
     --toggle-theme-btn-text: #fafafa;
     --menu-underline: #5d7892;
-    --box-shadow: #293641;
+    --box-nav-shadow: #293641;
   }
 } */
 
@@ -181,6 +250,6 @@ footer {
     --toggle-theme-btn-hover: #ebebeb;
     --toggle-theme-btn-text: #222222;
     --menu-underline: #906fb6;
-    --box-shadow: #ebebeb;
+    --box-nav-shadow: #ebebeb;
   }
 } */
