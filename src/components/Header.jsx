@@ -23,7 +23,7 @@ export default function Header() {
             {hamburger}
           </button>
         </div>
-        <ul className="nav-menu" style={{ display: menuOpen ? "none" : "block" }}>
+        <ul className="nav-menu" style={{ display: menuOpen ? "block" : "none" }}>
           <h1 className="logo-menu">Linda Liu</h1>
           <li className="home">
             <Link to="/" className="nav-link">

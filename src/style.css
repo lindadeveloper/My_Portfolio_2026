@@ -243,6 +243,7 @@ html {
 
 /* @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark;
     --main-bg-color: #1a1b22;
     --main-text-color: #fafafa;
     --toggle-theme-btn-border: #293641;
@@ -251,18 +252,6 @@ html {
     --toggle-theme-btn-text: #fafafa;
     --menu-underline: #5d7892;
     --box-nav-shadow: #293641;
-  }
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --main-bg-color: #fafafa;
-    --main-text-color: #222222;
-    --toggle-theme-btn-border: #bbbbbb;
-    --toggle-theme-btn-bg-color: #fafafa;
-    --toggle-theme-btn-hover: #ebebeb;
-    --toggle-theme-btn-text: #222222;
-    --menu-underline: #906fb6;
-    --box-nav-shadow: #ebebeb;
+    --box-menu-shadow: #5d7992;
   }
 } */

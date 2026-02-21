@@ -16,7 +16,31 @@ export default function App() {
     setDarkTheme((prevTheme) => !prevTheme);
   }
   const currentTheme = darkTheme ? "dark" : "light";
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("darkTheme") || "system";
+  //   setDarkTheme(savedTheme);
+  // }, []);
 
+  // useEffect(() => {
+  //   const root = document.documentElement;
+
+  //   if (darkTheme === "system") {
+  //     root.removeAttribute("data-theme");
+  //   } else {
+  //     root.setAttribute("data-theme", darkTheme);
+  //   }
+  //   localStorage.setItem("darkTheme", darkTheme);
+  // }, [darkTheme]);
+
+  // function themeToggle() {
+  //   if (darkTheme === "system") {
+  //     return "system";
+  //   } else if (darkTheme === "dark") {
+  //     return "dark";
+  //   } else {
+  //     return "light";
+  //   }
+  // }
   return (
     <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
       <div className="body-container" data-theme={currentTheme}>
