@@ -26,7 +26,7 @@
   color-scheme: dark;
   --main-bg-color: #1a1b22;
   --main-text-color: #fafafa;
-  --toggle-theme-btn-border: #293641;
+  --toggle-theme-btn-border: #354553;
   --toggle-theme-btn-bg-color: #1a1b22;
   --toggle-theme-btn-hover: #293641;
   --toggle-theme-btn-text: #fafafa;
@@ -71,6 +71,7 @@ html {
   width: 73%;
 }
 
+.home,
 .logo,
 .theme-btn,
 .ham-btn {
@@ -89,15 +90,12 @@ html {
   justify-content: end;
 }
 
-.home {
-  display: none;
-}
-
 .logo-menu {
   padding: 2rem;
 }
 
 .logo-menu,
+.home,
 .projects,
 .about,
 .contact {
@@ -106,12 +104,14 @@ html {
   justify-content: center;
 }
 
+.home,
 .projects,
 .about,
 .contact {
   font-size: 1.2rem;
 }
 
+.home:hover,
 .projects:hover,
 .about:hover,
 .contact:hover {
@@ -179,7 +179,7 @@ html {
 }
 
 .hamburgerToggle:hover {
-  background-color: var(--toggle-theme-btn-hover);
+  box-shadow: 0 0 5px var(--box-menu-shadow);
 }
 
 .darkModeToggle {
@@ -198,7 +198,7 @@ html {
 /*I made the button color change on hover to make it more user friendly*/
 
 .darkModeToggle:hover {
-  background-color: var(--toggle-theme-btn-hover);
+  box-shadow: 0 0 5px var(--box-menu-shadow);
 }
 
 .toggleThemeText {

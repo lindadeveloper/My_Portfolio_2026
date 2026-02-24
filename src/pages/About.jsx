@@ -1,34 +1,19 @@
 export default function About() {
   return (
     <section className="content-container">
-      <h1>About</h1>
+      <h1>About me</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
-        aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
-        aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem
-        ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        I’m a lifelong learner who continuously improves her skills by staying consistent, being
+        accountable, and self-motivated. I enjoy solving complex problems, optimizing performance,
+        and exploring new technologies to build better products. My focus is on writing maintainable
+        code, designing scalable systems, and creating digital experiences that are both intuitive
+        and effective.
       </p>
+
       <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
-        aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-        pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
-        aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
-        aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem
-        ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-        taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        When I’m not coding, you’ll probably find me walking in nature with my dog or trying out new
+        vegetarian recipes. I believe that curiosity, persistence, and a little fun go a long way in
+        life and in software development.🙂
       </p>
     </section>
   );
