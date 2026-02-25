@@ -1,15 +1,15 @@
-// import { Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Layout from "./components/Layout";
-// const Home = lazy(() => import("./pages/Home"));
-// const Projects = lazy(() => import("./pages/Projects"));
-// const About = lazy(() => import("./pages/About"));
-// const Contact = lazy(() => import("./pages/Contact"));
-// const Layout = lazy(() => import("./components/Layout"));
+// import Home from "./pages/Home";
+// import Projects from "./pages/Projects";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import Layout from "./components/Layout";
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Layout = lazy(() => import("./components/Layout"));
 import useLocalStorage from "use-local-storage";
 import { ThemeContext } from "./Context";
 
@@ -49,14 +49,16 @@ export default function App() {
     <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
       <div className="body-container" data-theme={currentTheme}>
         <BrowserRouter>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Layout>
+          <Suspense fallback={<div>Loading Page...</div>}>
+            <Layout>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </Layout>
+          </Suspense>
         </BrowserRouter>
       </div>
     </ThemeContext.Provider>
