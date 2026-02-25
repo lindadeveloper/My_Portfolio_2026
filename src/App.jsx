@@ -1,13 +1,17 @@
+// import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createContext } from "react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
+// const Home = lazy(() => import("./pages/Home"));
+// const Projects = lazy(() => import("./pages/Projects"));
+// const About = lazy(() => import("./pages/About"));
+// const Contact = lazy(() => import("./pages/Contact"));
+// const Layout = lazy(() => import("./components/Layout"));
 import useLocalStorage from "use-local-storage";
-
-const ThemeContext = createContext();
+import { ThemeContext } from "./Context";
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -16,7 +20,7 @@ export default function App() {
     setDarkTheme((prevTheme) => !prevTheme);
   }
   const currentTheme = darkTheme ? "dark" : "light";
-  // useEffect(() => {
+  // useEffect(() => {c
   //   const savedTheme = localStorage.getItem("darkTheme") || "system";
   //   setDarkTheme(savedTheme);
   // }, []);
