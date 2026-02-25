@@ -11,6 +11,8 @@ export default function Header() {
   }
 
   const hamburger = menuOpen ? <X size={30} strokeWidth="1" /> : <Menu size={30} strokeWidth="1" />;
+  const toggleMenu = { display: menuOpen ? "block" : "none" };
+
   return (
     <header className="nav-container">
       <nav className="nav-bar">
@@ -23,28 +25,28 @@ export default function Header() {
             {hamburger}
           </button>
         </div>
-        <ul className="nav-menu" style={{ display: menuOpen ? "block" : "none" }}>
+        <ul className="nav-menu" style={toggleMenu}>
           <h1 className="logo-menu">Linda Liu</h1>
           <li className="home">
-            <Link to="/" className="nav-link">
+            <Link to="/" onClick={menuToggle} className="nav-link">
               <House />
               Home
             </Link>
           </li>
           <li className="projects">
-            <Link to="/projects" className="nav-link">
+            <Link to="/projects" onClick={menuToggle} className="nav-link">
               <Presentation />
               Projects
             </Link>
           </li>
           <li className="about">
-            <Link to="/about" className="nav-link">
+            <Link to="/about" onClick={menuToggle} className="nav-link">
               <CircleQuestionMark />
               About
             </Link>
           </li>
           <li className="contact">
-            <Link to="/contact" className="nav-link">
+            <Link to="/contact" onClick={menuToggle} className="nav-link">
               <Mail />
               Contact
             </Link>
