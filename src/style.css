@@ -20,6 +20,7 @@
   --menu-underline: #664c83;
   --box-nav-shadow: #ebebeb;
   --box-menu-shadow: #c2c2c2;
+  --footer-text-color: #969696;
 }
 
 [data-theme="dark"] {
@@ -71,18 +72,25 @@ html {
   width: 73%;
 }
 
-.home,
 .logo,
 .theme-btn,
 .ham-btn {
+  margin: 2rem 0;
   padding-top: 1rem;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  grid-column: span 2;
   font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.theme-btn {
+  grid-column: span 2;
+  justify-content: center;
 }
 
 .ham-btn {
@@ -90,11 +98,11 @@ html {
   justify-content: end;
 }
 
-.logo-menu {
+.menu-logo {
   padding: 2rem;
 }
 
-.logo-menu,
+.menu-logo,
 .home,
 .projects,
 .about,
@@ -137,17 +145,22 @@ html {
   margin: 0 2rem;
 }
 
-.project-container {
+.project-btn {
+  display: inline-block;
   border: 1px solid var(--toggle-theme-btn-border);
   background-color: var(--toggle-theme-btn-bg-color);
+  color: var(--toggle-theme-btn-text);
   border-radius: 1rem;
   padding: 1rem 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  width: 100%;
+  height: 12rem;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 
-.project-container:hover {
+.project-btn:hover {
   box-shadow: 0 0 5px var(--box-menu-shadow);
 }
 
@@ -159,6 +172,7 @@ html {
 .footer {
   text-align: center;
   margin: 2rem;
+  color: var(--footer-text-color);
 }
 
 /*to animate the menu item's underline on hover for more user friendliness*/

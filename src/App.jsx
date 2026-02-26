@@ -5,13 +5,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 // import Layout from "./components/Layout";
+import useLocalStorage from "use-local-storage";
+import { ThemeContext } from "./Context";
 const Home = lazy(() => import("./pages/Home"));
-const Projects = lazy(() => import("./pages/Projects"));
+const ProjectLayout = lazy(() => import("./components/ProjectLayout"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Layout = lazy(() => import("./components/Layout"));
-import useLocalStorage from "use-local-storage";
-import { ThemeContext } from "./Context";
+const Website = lazy(() => import("./pages/Projects/Website"));
+const Games = lazy(() => import("./pages/Projects/Games"));
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -50,14 +52,20 @@ export default function App() {
       <div className="body-container" data-theme={currentTheme}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading Page...</div>}>
-            <Layout>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </Layout>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+
+                <Route path="projects" element={<ProjectLayout />}>
+                  <Route path="/projects/website" element={<Website />} />
+                  <Route path="games" element={<Games />} />
+                </Route>
+
+                <Route path="about" element={<About />} />
+
+                <Route path="contact" element={<Contact />} />
+              </Route>
+            </Routes>
           </Suspense>
         </BrowserRouter>
       </div>

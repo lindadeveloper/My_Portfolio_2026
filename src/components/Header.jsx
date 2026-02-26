@@ -1,5 +1,5 @@
 import ToggleTheme from "./ToggleTheme";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X, House, Presentation, CircleQuestionMark, Mail } from "lucide-react";
 import { useState } from "react";
 
@@ -16,7 +16,9 @@ export default function Header() {
   return (
     <header className="nav-container">
       <nav className="nav-bar">
-        <h1 className="logo">Linda Liu</h1>
+        <Link to="/" className="logo">
+          Linda Liu
+        </Link>
         <div className="theme-btn">
           <ToggleTheme />
         </div>
@@ -26,30 +28,30 @@ export default function Header() {
           </button>
         </div>
         <ul className="nav-menu" style={toggleMenu}>
-          <h1 className="logo-menu">Linda Liu</h1>
+          <h1 className="menu-logo">Linda Liu</h1>
           <li className="home">
-            <Link to="/" onClick={menuToggle} className="nav-link">
+            <NavLink to="/" onClick={menuToggle} className="nav-link">
               <House />
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="projects">
-            <Link to="/projects" onClick={menuToggle} className="nav-link">
+            <NavLink to="/projects" onClick={menuToggle} className="nav-link">
               <Presentation />
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="about">
-            <Link to="/about" onClick={menuToggle} className="nav-link">
+            <NavLink to="/about" onClick={menuToggle} className="nav-link">
               <CircleQuestionMark />
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="contact">
-            <Link to="/contact" onClick={menuToggle} className="nav-link">
+            <NavLink to="/contact" onClick={menuToggle} className="nav-link">
               <Mail />
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
