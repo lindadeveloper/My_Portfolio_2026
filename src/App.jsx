@@ -8,12 +8,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 import { ThemeContext } from "./Context";
 const Home = lazy(() => import("./pages/Home"));
-const ProjectLayout = lazy(() => import("./components/ProjectLayout"));
+const ProjectLayout = lazy(() => import("./layouts/ProjectLayout"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Layout = lazy(() => import("./components/Layout"));
-const Website = lazy(() => import("./pages/Projects/Website"));
+const Layout = lazy(() => import("./layouts/Layout"));
 const Games = lazy(() => import("./pages/Projects/Games"));
+const Website = lazy(() => import("./pages/Projects/Website"));
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -49,20 +49,17 @@ export default function App() {
   // }
   return (
     <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
-      <div className="body-container" data-theme={currentTheme}>
+      <div className="site-wrapper" data-theme={currentTheme}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading Page...</div>}>
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
 
-                <Route path="projects" element={<ProjectLayout />}>
-                  <Route path="/projects/website" element={<Website />} />
-                  <Route path="games" element={<Games />} />
-                </Route>
-
+                <Route path="projects" element={<ProjectLayout />} />
+                <Route path="/projects/website" element={<Website />} />
+                <Route path="/projects/games" element={<Games />} />
                 <Route path="about" element={<About />} />
-
                 <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>

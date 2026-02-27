@@ -1,6 +1,16 @@
+## Linda Liu's Portfolio Website 2026
+
+Built using React and Vite
+To run locally:
+
+1. Clone the repo
+2. Run pnpm install
+3. Run pnpm run dev
+4. Open your browser and navigate to localhost:5173
+
 # Problems I faced
 
-I checked if the page loading performance was good by using the lighthouse tool and disabled the cache in the Network tab of the dev tool, but the score performance turned out to be 77 on desktop and 55 on mobile which is slow. So, I decided to do Route Based Lazy Loading: I implemented the lazy loading and Suspense with a fallback (e.g. loading spinner or loading...) So it would load the components only when needed. After the implementation, the score performance went up to 81 on desktop and 58 on mobile.
+I checked if the page performance was good by using the lighthouse tool and disabled the cache in the Network tab of the dev tool, but the score performance turned out to be 77 on desktop and 55 on mobile which is slow. So, I decided to do Route Based Lazy Loading: I implemented the lazy loading and Suspense with a fallback (e.g. loading spinner or loading...) So it would load the components only when needed. After the implementation, the score performance went up to 81 on desktop and 58 on mobile.
 
 I ran into the problem of "Could not Fast Refresh ("ThemeContext" export is incompatible)", I solved the problem by placing the ThemeContext component into its own dedicated component file, so it would only import when needed. I also made sure to exit the terminal and npm run dev to make sure it worked.
 

@@ -20,7 +20,8 @@
   --menu-underline: #664c83;
   --box-nav-shadow: #ebebeb;
   --box-menu-shadow: #c2c2c2;
-  --footer-text-color: #969696;
+  --footer-text-color: #999999;
+  --footer-text-link: #4f85e9;
 }
 
 [data-theme="dark"] {
@@ -34,20 +35,18 @@
   --menu-underline: #5d7892;
   --box-nav-shadow: #293641;
   --box-menu-shadow: #5d7992;
+  --footer-text-color: #7899b6;
+  --footer-text-link: #71a3ff;
 }
 
+html,
 body {
-  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-body,
-html {
-  width: 100vw;
-  overflow: hidden;
-}
-
-.body-container {
-  height: 100vh;
+.site-wrapper {
+  min-height: 100vh;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
@@ -140,9 +139,15 @@ html {
   width: 100%;
 }
 
+/*this gives a consistent structure to the page*/
 .nav-container,
 .main-container {
   margin: 0 2rem;
+}
+
+/*this will help prevent users from clicking on the wrong area*/
+.content-container {
+  margin-top: 1rem;
 }
 
 .project-btn {
@@ -152,7 +157,7 @@ html {
   color: var(--toggle-theme-btn-text);
   border-radius: 1rem;
   padding: 1rem 2rem;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   width: 100%;
   height: 12rem;
   text-decoration: none;
@@ -164,6 +169,25 @@ html {
   box-shadow: 0 0 5px var(--box-menu-shadow);
 }
 
+.project-title {
+  margin: 1.5rem 0;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--toggle-theme-btn-text);
+  border: 1px solid var(--toggle-theme-btn-border);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-btn:hover {
+  box-shadow: 0 0 5px var(--box-menu-shadow);
+}
 .footer-container {
   display: flex;
   justify-content: center;
@@ -173,6 +197,13 @@ html {
   text-align: center;
   margin: 2rem;
   color: var(--footer-text-color);
+}
+
+.footer-link {
+  margin: 0 0.3rem;
+  text-underline-offset: 0.2rem;
+  color: var(--footer-text-link);
+  font-weight: 600;
 }
 
 /*to animate the menu item's underline on hover for more user friendliness*/
@@ -225,7 +256,7 @@ html {
   color: var(--toggle-theme-btn-text);
 }
 
-/*I made the button color change on hover to make it more user friendly*/
+/*the shadow help pops up the button more to make it more user friendly*/
 
 .darkModeToggle:hover {
   box-shadow: 0 0 5px var(--box-menu-shadow);
@@ -234,6 +265,7 @@ html {
 .toggleThemeText {
   font-size: 1rem;
 }
+
 /*responsiveness for mobile devices*/
 /* @media (max-width: 480px) {
 } */
