@@ -34,6 +34,7 @@
   --hero-btn-bg-border-color-hover: #222222;
   --hero-btn-bg-color-hover: #222222;
   --hero-btn-text-hover: #fafafa;
+  --stack-icons-color: #658fb4;
 }
 
 [data-theme="dark"] {
@@ -61,6 +62,7 @@
   --hero-btn-bg-border-color-hover: #fafafa;
   --hero-btn-bg-color-hover: #fafafa;
   --hero-btn-text-hover: #1a1b22;
+  --stack-icons-color: #658fb4;
 }
 
 html,
@@ -71,6 +73,10 @@ body {
 
 p {
   margin: 1rem 0;
+}
+
+span {
+  color: var(--stack-icons-color);
 }
 
 /*to keep the footer at the bottom consistently*/
@@ -323,6 +329,11 @@ p {
 .hero-btn-about:hover {
   border: 1px solid var(--hero-btn-about-border-hover);
   box-shadow: 0 0 10px var(--hero-btn-about-hover);
+}
+
+.stack-icons {
+  font-size: 3rem;
+  color: var(--stack-icons-color);
 }
 
 .darkModeToggle {
