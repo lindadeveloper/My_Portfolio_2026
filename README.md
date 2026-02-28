@@ -10,6 +10,9 @@ To run locally:
 
 # Problems I faced
 
+The initial loading of the site was slow:
+
+Solutions:
 I checked if the page performance was good by using the lighthouse tool and disabled the cache in the Network tab of the dev tool, but the score performance turned out to be 77 on desktop and 55 on mobile which is slow. So, I decided to do Route Based Lazy Loading: I implemented the lazy loading and Suspense with a fallback (e.g. loading spinner or loading...) So it would load the components only when needed. After the implementation, the score performance went up to 81 on desktop and 58 on mobile.
 
 I ran into the problem of "Could not Fast Refresh ("ThemeContext" export is incompatible)", I solved the problem by placing the ThemeContext component into its own dedicated component file, so it would only import when needed. I also made sure to exit the terminal and npm run dev to make sure it worked.
@@ -17,6 +20,19 @@ I ran into the problem of "Could not Fast Refresh ("ThemeContext" export is inco
 I tried code splitting to improve the performance by splitting them into: Routes, Components, Libraries, and Features
 
 I imported only what I use instead of the full library from React.
+
+---
+
+I had trouble creating a separate page for the project pages:
+Solution: I made them a sibling component instead of a child component
+
+I had trouble keeping the background to 100% height:
+Solution: I added a site-wrapper class to the entire site and set the min-height: 100vh
+
+Other finds:
+I found out how to link the sibling component to the project component by Link to="../projects" from the sibling component. This allows the sibling component to have it's own entire page while linked to the project component.
+
+---
 
 What else I can do:
 

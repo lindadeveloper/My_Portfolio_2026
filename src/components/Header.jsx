@@ -28,7 +28,10 @@ export default function Header() {
           </button>
         </div>
         <ul className="nav-menu" style={toggleMenu}>
-          <h1 className="menu-logo">Linda Liu</h1>
+          <div className="menu-logo">
+            <img src="src\assets\Linda-avatar.svg" />
+            <h1>Linda Liu</h1>
+          </div>
           <li className="home">
             <NavLink to="/" onClick={menuToggle} className="nav-link">
               <House />

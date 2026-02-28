@@ -9,11 +9,14 @@ export default function ProjectLayout() {
 
   return (
     <section className="content-container">
-      <Link to="website" className="project-btn">
-        Website
+      <Link to="to-do-list-app" className="project-btn">
+        To-Do List App
       </Link>
-      <Link to="games" className="project-btn">
-        Games
+      <Link to="blog-app" className="project-btn">
+        Blog App
+      </Link>
+      <Link to="uxui" className="project-btn">
+        UX UI projects
       </Link>
     </section>
   );

@@ -7,13 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Layout from "./components/Layout";
 import useLocalStorage from "use-local-storage";
 import { ThemeContext } from "./Context";
-const Home = lazy(() => import("./pages/Home"));
 const ProjectLayout = lazy(() => import("./layouts/ProjectLayout"));
+const Layout = lazy(() => import("./layouts/Layout"));
+const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Layout = lazy(() => import("./layouts/Layout"));
-const Games = lazy(() => import("./pages/Projects/Games"));
-const Website = lazy(() => import("./pages/Projects/Website"));
+const Blogapp = lazy(() => import("./pages/Projects/Blogapp"));
+const ToDoList = lazy(() => import("./pages/Projects/ToDoList"));
+const UXUI = lazy(() => import("./pages/Projects/UXUI"));
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -57,8 +58,9 @@ export default function App() {
                 <Route index element={<Home />} />
 
                 <Route path="projects" element={<ProjectLayout />} />
-                <Route path="/projects/website" element={<Website />} />
-                <Route path="/projects/games" element={<Games />} />
+                <Route path="/projects/to-do-list-app" element={<ToDoList />} />
+                <Route path="/projects/blog-app" element={<Blogapp />} />
+                <Route path="/projects/uxui" element={<UXUI />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
               </Route>

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { MoveLeft } from "lucide-react";
 
-export default function Games() {
+export default function Blogapp() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
         <MoveLeft /> Back to all Projects
       </Link>
-      <h1 className="project-title">This is the game page</h1>
+      <h1 className="project-title">Blog App</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
         pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
