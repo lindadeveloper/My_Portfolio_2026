@@ -6,41 +6,44 @@
 
 :root {
   color-scheme: light dark;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 [data-theme="light"] {
   color-scheme: light;
   --main-bg-color: #fafafa;
   --main-text-color: #222222;
-  --toggle-theme-btn-border: #658fb4;
+  --toggle-theme-btn-border: #4c7394;
   --toggle-theme-btn-border-hover: #6992b6;
   --toggle-theme-btn-bg-color: #fafafa;
   --toggle-theme-btn-text: #222222;
   --box-menu-shadow: #6992b6;
-  --back-btn-bg-border-color: #6992b6;
+  --back-btn-bg-border-color: #4c7394;
   --back-btn-bg-border-color-hover: #222222;
-  --back-btn-bg-color: #6992b6;
+  --back-btn-bg-color: #4c7394;
   --back-btn-bg-color-hover: #222222;
   --back-btn-text-color: #fafafa;
   --back-btn-text-color-hover: #fafafa;
   --side-menu-text: #222222;
   --side-menu-text-hover: #fafafa;
-  --side-menu-bg-color-hover: #658fb4;
+  --side-menu-bg-color-hover: #4c7394;
   --side-menu-shadow: #a0a0a0;
   --footer-text-color: #999999;
   --footer-text-link: #4f85e9;
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #222222;
-  --hero-btn-about-border: #658fb4;
-  --hero-btn-about-hover: #658fb4;
-  --hero-btn-about-border-hover: #658fb4;
-  --hero-btn-bg-color: #658fb4;
-  --hero-btn-bg-border-color: #658fb4;
+  --hero-btn-about-border: #4c7394;
+  --hero-btn-about-hover: #4c7394;
+  --hero-btn-about-border-hover: #4c7394;
+  --hero-btn-bg-color: #4c7394;
+  --hero-btn-bg-border-color: #4c7394;
   --hero-btn-bg-border-color-hover: #222222;
   --hero-btn-bg-color-hover: #222222;
   --hero-btn-text-hover: #fafafa;
-  --stack-icons-color: #658fb4;
+  --stack-icons-color: #4c7394;
+  --stack-icon-btn-bg-color: #fafafa;
+  --stack-icons-color-hover: #4c7394;
+  --nav-bar-shadow: #bbbbbb;
 }
 
 [data-theme="dark"] {
@@ -48,19 +51,19 @@
   --main-bg-color: #1a1b22;
   --main-text-color: #fafafa;
   --toggle-theme-btn-border: #658fb4;
-  --toggle-theme-btn-border-hover: #5d7992;
+  --toggle-theme-btn-border-hover: #658fb4;
   --toggle-theme-btn-bg-color: #1a1b22;
   --toggle-theme-btn-text: #fafafa;
   --box-menu-shadow: #658fb4;
-  --back-btn-bg-border-color: #6992b6;
-  --back-btn-bg-border-color-hover: #6992b6;
+  --back-btn-bg-border-color: #658fb4;
+  --back-btn-bg-border-color-hover: #658fb4;
   --back-btn-bg-color: #1a1b22;
-  --back-btn-bg-color-hover: #6992b6;
+  --back-btn-bg-color-hover: #658fb4;
   --back-btn-text-color: #fafafa;
   --back-btn-text-color-hover: #fafafa;
   --side-menu-text: #fafafa;
   --side-menu-text-hover: #fafafa;
-  --side-menu-bg-color-hover: #6992b6;
+  --side-menu-bg-color-hover: #658fb4;
   --side-menu-shadow: #658fb4;
   --footer-text-color: #7899b6;
   --footer-text-link: #71a3ff;
@@ -75,6 +78,9 @@
   --hero-btn-bg-color-hover: #fafafa;
   --hero-btn-text-hover: #1a1b22;
   --stack-icons-color: #658fb4;
+  --stack-icon-btn-bg-color: #1a1b22;
+  --stack-icons-color-hover: #658fb4;
+  --nav-bar-shadow: #658fb4;
 }
 
 html,
@@ -84,11 +90,20 @@ body {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 2rem 0;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
 }
 
 span {
   color: var(--stack-icons-color);
+}
+
+.em-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0.3rem;
+  color: var(--main-text-color);
 }
 
 /*to keep the footer at the bottom consistently*/
@@ -106,7 +121,15 @@ span {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: minmax(8rem, auto) 1fr auto;
+  padding: 0 2rem;
+  background-color: var(--main-bg-color);
 }
+
+/*add this to react logic*/
+
+/* .nav-bar.scrolled {
+  box-shadow: 0 0 10px var(--box-menu-shadow);
+} */
 
 /*to keep the modal menu floated to the left*/
 .nav-menu {
@@ -184,13 +207,13 @@ span {
   text-decoration: none;
   gap: 0.5rem;
   width: 100%;
+  font-size: 1.2rem;
 }
 .nav-link:hover {
   color: var(--side-menu-text-hover);
 }
 
 /*this gives a consistent structure to the page*/
-.nav-container,
 .main-container {
   margin: 0 2rem;
 }
@@ -315,6 +338,7 @@ span {
 .hero-btn-container {
   display: flex;
   gap: 1rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .hero-btn-about,
@@ -331,6 +355,7 @@ span {
   background-color: var(--hero-btn-bg-color);
   color: var(--hero-btn-text);
   transition: all 0.3s ease-out;
+  font-size: 1.2rem;
 }
 
 .hero-btn:hover {
@@ -341,6 +366,7 @@ span {
   color: var(--hero-btn-about-text);
   border: 1px solid var(--hero-btn-about-border);
   transition: all 0.3s ease-out;
+  font-size: 1.2rem;
 }
 
 .hero-btn-about:hover {
@@ -348,7 +374,43 @@ span {
   box-shadow: 0 0 10px var(--hero-btn-about-hover);
 }
 
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--stack-icon-btn-bg-color);
+  transition: transform 0.5s ease-out;
+  /*for larger screens*/
+
+  /* width: 12rem; */
+}
+
+.icon-btn:hover {
+  transform: translateY(-1rem);
+  /*for larger screens*/
+
+  /* font-size: 2rem;
+  width: 12rem; */
+  margin: 1rem 0;
+  box-shadow: 0 0 10px var(--stack-icons-color-hover);
+}
+
 .stack-icons {
+  margin-bottom: 0.3rem;
   font-size: 3rem;
   color: var(--stack-icons-color);
 }
@@ -415,6 +477,8 @@ span {
     bottom: 0;
   }
 }
+
+/*add system default theme*/
 
 /* @media (prefers-color-scheme: dark) {
   :root {
