@@ -44,6 +44,7 @@
   --stack-icon-btn-bg-color: #fafafa;
   --stack-icons-color-hover: #4c7394;
   --nav-bar-shadow: #bbbbbb;
+  --chat-text-color: #fafafa;
 }
 
 [data-theme="dark"] {
@@ -81,6 +82,7 @@
   --stack-icon-btn-bg-color: #1a1b22;
   --stack-icons-color-hover: #658fb4;
   --nav-bar-shadow: #658fb4;
+  --chat-text-color: #1a1b22;
 }
 
 html,
@@ -93,6 +95,7 @@ p {
   margin: 2rem 0;
   line-height: 1.8rem;
   font-size: 1.2rem;
+  max-width: 40rem;
 }
 
 span {
@@ -232,8 +235,59 @@ span {
   margin-bottom: 1rem;
 }
 
+.chat-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.text-label {
+  content: "";
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15rem solid orange;
+  font-family: monospace;
+  white-space: nowrap;
+  color: var(--chat-text-color);
+  animation:
+    typing 1s steps(4, end) forwards,
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.mirror-icon {
+  margin-top: -3.3rem;
+  position: relative;
+  transform: scaleX(-1);
+}
+
 .about-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-btn {
@@ -450,32 +504,10 @@ span {
 
 /*responsiveness for tablets and small laptops*/
 @media (min-width: 481px) and (max-width: 1024px) {
-  .nav-menu {
-    gap: 2rem;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 /*responsiveness for large screens*/
 @media (min-width: 1025px) {
-  .nav-container {
-    height: 8rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 5px var(--box-shadow);
-  }
-  .nav-menu {
-    gap: 3rem;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 /*add system default theme*/
