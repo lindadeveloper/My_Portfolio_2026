@@ -29,7 +29,7 @@ export default function Header() {
         </div>
         <ul className="nav-menu" style={toggleMenu}>
           <div className="menu-logo">
-            <img src="/src/assets/Linda-avatar.svg" />
+            <img src="/assets/Linda-avatar.svg" />
             <h1>Linda Liu</h1>
           </div>
           <li className="home">

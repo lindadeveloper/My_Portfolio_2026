@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section className="content-container">
       <div className="about-container">
-        <img src="/src/assets/Linda-profile.png" className="profile-img" />
+        <img src="/assets/Linda-profile.png" className="profile-img" />
         <h1>About me</h1>
         <p>
           I’m a lifelong learner who continuously improves her skills by staying consistent, being

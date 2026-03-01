@@ -32,6 +32,8 @@ Solution: I added a site-wrapper class to the entire site and set the min-height
 Other finds:
 I found out how to link the sibling component to the project component by Link to="../projects" from the sibling component. This allows the sibling component to have it's own entire page while linked to the project component.
 
+Images from the asset folder weren't showing after being deployed on Vercel, so I moved it to the public folder instead of the src folder.
+
 ---
 
 What else I can do:
