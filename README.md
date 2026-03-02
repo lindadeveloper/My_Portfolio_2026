@@ -34,6 +34,9 @@ I found out how to link the sibling component to the project component by Link t
 
 Images from the asset folder weren't showing after being deployed on Vercel, so I moved it to the public folder instead of the src folder.
 
+The site doesn't reload and goes to page 404 when on child or sibling pages:
+Solution: I added a vercel.json file with a code to fix this issue
+
 ---
 
 What else I can do:
