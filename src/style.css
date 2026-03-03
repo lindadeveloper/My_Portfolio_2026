@@ -94,14 +94,20 @@ body {
 }
 
 /*text animation*/
-p {
+.p2,
+.p1 {
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease-in;
   animation: fadeInUp 1s ease forwards;
 }
 
-p {
-  margin: 1rem 0;
+.p2 {
+  animation-delay: 0.5s;
+}
+
+.p2,
+.p1 {
+  margin: 1.5rem 0;
   line-height: 1.8rem;
   font-size: 1.2rem;
   max-width: 650px;
@@ -139,7 +145,7 @@ header,
 .site-wrapper,
 .content-container,
 .nav-bar {
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .nav-bar,
@@ -148,9 +154,9 @@ header,
 }
 
 .nav-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(8rem, auto) 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
   background-color: var(--main-bg-color);
 }
@@ -162,7 +168,7 @@ header,
   z-index: 1000;
   left: 0;
   top: 0;
-  overflow: auto;
+  overflow: hidden;
   list-style-type: none;
   background-color: var(--side-menu-bg-color);
   box-shadow: 0 0 8px var(--side-menu-shadow);
@@ -197,7 +203,7 @@ header,
 }
 
 .menu-logo {
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0;
 }
 
 .menu-logo > img {
@@ -270,10 +276,10 @@ header,
   transform: scaleX(-1);
 }
 
+.contact-container,
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -291,7 +297,7 @@ header,
 }
 
 .project-title {
-  margin: 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 .back-btn {
@@ -519,43 +525,73 @@ header,
   }
 
   .content-container {
-    margin: 2rem 4rem;
-  }
-  .nav-bar{
-    padding: 0;
-    margin: 0rem 4rem;
+    margin: 3rem 4rem;
   }
 
-@keyframes typing {
-  from {
-    width: 0;
+  .contact-container,
+  .about-container {
+    margin-top: 4rem;
   }
-  to {
-    width: 45%;
-  }
-}
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
+  .nav-menu {
+    position: sticky;
+    grid-column: span 4;
+    width: 100%;
+    border-radius: 0.5rem;
     opacity: 0;
-    transform: translateY(10%);
+    animation: fadeIn 0.5s ease forwards;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .menu-logo {
+    padding: 2rem 0;
+  }
+
+  .nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin: 1rem 4rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 45%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
-
 /*add system default theme*/
 
 /* @media (prefers-color-scheme: dark) {

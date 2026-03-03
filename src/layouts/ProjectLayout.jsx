@@ -9,15 +9,17 @@ export default function ProjectLayout() {
 
   return (
     <section className="content-container">
-      <Link to="to-do-list-app" className="project-btn">
-        To-Do List App
-      </Link>
-      <Link to="blog-app" className="project-btn">
-        Blog App
-      </Link>
-      <Link to="uxui" className="project-btn">
-        UX UI projects
-      </Link>
+      <div className="project-container">
+        <Link to="to-do-list-app" className="project-btn">
+          To-Do List App
+        </Link>
+        <Link to="blog-app" className="project-btn">
+          Blog App
+        </Link>
+        <Link to="uxui" className="project-btn">
+          UX UI projects
+        </Link>
+      </div>
     </section>
   );
 }

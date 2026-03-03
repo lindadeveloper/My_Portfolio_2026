@@ -37,6 +37,9 @@ Images from the asset folder weren't showing after being deployed on Vercel, so 
 The site doesn't reload and goes to page 404 when on child or sibling pages:
 Solution: I added a vercel.json file with a code to fix this issue
 
+I had trouble flexing the nav menu on bigger screen.
+Solution: I use the dev tool to analyze the problem. I realized the nav-menu is set to display block inside the function, however, I liked how it looked. So, I left it as it is.
+
 ---
 
 What else I can do:
