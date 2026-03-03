@@ -15,9 +15,10 @@
   --main-text-color: #222222;
   --toggle-theme-btn-border: #4c7394;
   --toggle-theme-btn-border-hover: #6992b6;
-  --toggle-theme-btn-bg-color: #fafafa;
+  --toggle-theme-btn-bg-color: transparent;
   --toggle-theme-btn-text: #222222;
-  --box-menu-shadow: #6992b6;
+  --box-10px-shadow: #6992b6;
+  --box-20px-shadow: #4c7394;
   --back-btn-bg-border-color: #4c7394;
   --back-btn-bg-border-color-hover: #222222;
   --back-btn-bg-color: #4c7394;
@@ -26,6 +27,7 @@
   --back-btn-text-color-hover: #fafafa;
   --side-menu-text: #222222;
   --side-menu-text-hover: #fafafa;
+  --side-menu-bg-color: #fafafa;
   --side-menu-bg-color-hover: #4c7394;
   --side-menu-shadow: #a0a0a0;
   --footer-text-color: #999999;
@@ -33,7 +35,6 @@
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #222222;
   --hero-btn-about-border: #4c7394;
-  --hero-btn-about-hover: #4c7394;
   --hero-btn-about-border-hover: #4c7394;
   --hero-btn-bg-color: #4c7394;
   --hero-btn-bg-border-color: #4c7394;
@@ -42,7 +43,6 @@
   --hero-btn-text-hover: #fafafa;
   --stack-icons-color: #4c7394;
   --stack-icon-btn-bg-color: #fafafa;
-  --stack-icons-color-hover: #4c7394;
   --nav-bar-shadow: #bbbbbb;
   --chat-text-color: #fafafa;
 }
@@ -53,9 +53,10 @@
   --main-text-color: #fafafa;
   --toggle-theme-btn-border: #658fb4;
   --toggle-theme-btn-border-hover: #658fb4;
-  --toggle-theme-btn-bg-color: #1a1b22;
+  --toggle-theme-btn-bg-color: transparent;
   --toggle-theme-btn-text: #fafafa;
-  --box-menu-shadow: #658fb4;
+  --box-10px-shadow: #658fb4;
+  --box-20px-shadow: #658fb4;
   --back-btn-bg-border-color: #658fb4;
   --back-btn-bg-border-color-hover: #658fb4;
   --back-btn-bg-color: #1a1b22;
@@ -64,6 +65,7 @@
   --back-btn-text-color-hover: #fafafa;
   --side-menu-text: #fafafa;
   --side-menu-text-hover: #fafafa;
+  --side-menu-bg-color: #1a1b22;
   --side-menu-bg-color-hover: #658fb4;
   --side-menu-shadow: #658fb4;
   --footer-text-color: #7899b6;
@@ -71,7 +73,6 @@
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #fafafa;
   --hero-btn-about-border: #658fb4;
-  --hero-btn-about-hover: #658fb4;
   --hero-btn-about-border-hover: #658fb4;
   --hero-btn-bg-color: #658fb4;
   --hero-btn-bg-border-color: #658fb4;
@@ -80,7 +81,6 @@
   --hero-btn-text-hover: #1a1b22;
   --stack-icons-color: #658fb4;
   --stack-icon-btn-bg-color: #1a1b22;
-  --stack-icons-color-hover: #658fb4;
   --nav-bar-shadow: #658fb4;
   --chat-text-color: #1a1b22;
 }
@@ -89,17 +89,32 @@ html,
 body {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*text animation*/
+p {
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: fadeInUp 1s ease forwards;
 }
 
 p {
-  margin: 2rem 0;
+  margin: 1rem 0;
   line-height: 1.8rem;
   font-size: 1.2rem;
-  max-width: 40rem;
+  max-width: 650px;
 }
 
 span {
   color: var(--stack-icons-color);
+}
+
+header,
+.main-container {
+  display: flex;
+  justify-content: center;
 }
 
 .em-text {
@@ -118,6 +133,18 @@ span {
 .site-wrapper {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  min-width: 100vw;
+}
+
+.site-wrapper,
+.content-container,
+.nav-bar {
+  max-width: 1200px;
+}
+
+.nav-bar,
+.content-container {
+  width: 100%;
 }
 
 .nav-bar {
@@ -128,12 +155,6 @@ span {
   background-color: var(--main-bg-color);
 }
 
-/*add this to react logic*/
-
-/* .nav-bar.scrolled {
-  box-shadow: 0 0 10px var(--box-menu-shadow);
-} */
-
 /*to keep the modal menu floated to the left*/
 .nav-menu {
   position: fixed;
@@ -143,7 +164,7 @@ span {
   top: 0;
   overflow: auto;
   list-style-type: none;
-  background-color: var(--main-bg-color);
+  background-color: var(--side-menu-bg-color);
   box-shadow: 0 0 8px var(--side-menu-shadow);
   height: 100%;
   width: 73%;
@@ -191,14 +212,6 @@ span {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  transition: all 0.3s ease-out;
-}
-
-.home:hover,
-.projects:hover,
-.about:hover,
-.contact:hover {
-  background-color: var(--side-menu-bg-color-hover);
 }
 
 .nav-link {
@@ -212,9 +225,6 @@ span {
   width: 100%;
   font-size: 1.2rem;
 }
-.nav-link:hover {
-  color: var(--side-menu-text-hover);
-}
 
 /*this gives a consistent structure to the page*/
 .main-container {
@@ -226,10 +236,6 @@ span {
 }
 
 /*this will help prevent users from clicking on the wrong area*/
-.content-container {
-  margin-top: 1rem;
-}
-
 .profile-img {
   width: 250px;
   margin-bottom: 1rem;
@@ -258,25 +264,6 @@ span {
     blink-caret 1s step-end infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 45%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
 .mirror-icon {
   margin-top: -3.3rem;
   position: relative;
@@ -301,13 +288,6 @@ span {
   width: 100%;
   height: 12rem;
   text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.project-btn:hover {
-  border: 1px solid var(--toggle-theme-btn-border-hover);
-  box-shadow: 0 0 10px var(--box-menu-shadow);
 }
 
 .project-title {
@@ -325,14 +305,8 @@ span {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  transition: all 0.3s ease-out;
 }
 
-.back-btn:hover {
-  color: var(--back-btn-text-color-hover);
-  border: 1px solid var(--back-btn-bg-border-color-hover);
-  background-color: var(--back-btn-bg-color-hover);
-}
 .footer-container {
   display: flex;
   justify-content: center;
@@ -351,46 +325,16 @@ span {
   font-weight: 600;
 }
 
-/*to animate the menu item's underline on hover for more user friendliness*/
-
-/* .nav-link {
-  position: relative;
-  padding: 0.5rem 0.7rem;
-  font-weight: 500;
-  transition: font-weight 0.3s ease;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  left: 0;
-  bottom: 0;
-  border-bottom: 2px solid var(--menu-underline);
-  transition: all 0.3s ease-out;
-}
-
-.menu:hover::after {
-  width: 100%;
-  cursor: pointer;
-} */
-
 .hamburgerToggle {
   border: 1px solid var(--toggle-theme-btn-border);
   background-color: var(--toggle-theme-btn-bg-color);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.hamburgerToggle:hover {
-  border: 1px solid var(--toggle-theme-btn-border-hover);
-  box-shadow: 0 0 10px var(--box-menu-shadow);
 }
 
 .hero-btn-container {
   display: flex;
+  text-align: center;
   gap: 1rem;
   margin: 1rem 0 2rem 0;
 }
@@ -408,30 +352,19 @@ span {
   border: 1px solid var(--hero-btn-bg-border-color);
   background-color: var(--hero-btn-bg-color);
   color: var(--hero-btn-text);
-  transition: all 0.3s ease-out;
   font-size: 1.2rem;
-}
-
-.hero-btn:hover {
-  border: 1px solid var(--hero-btn-bg-border-color-hover);
 }
 
 .hero-btn-about {
   color: var(--hero-btn-about-text);
   border: 1px solid var(--hero-btn-about-border);
-  transition: all 0.3s ease-out;
   font-size: 1.2rem;
-}
-
-.hero-btn-about:hover {
-  border: 1px solid var(--hero-btn-about-border-hover);
-  box-shadow: 0 0 10px var(--hero-btn-about-hover);
 }
 
 .icon-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -440,27 +373,12 @@ span {
   flex-direction: column;
   align-items: center;
   padding: 1rem 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: center;
   font-size: 1rem;
   border-radius: 1rem;
   border: none;
-  cursor: pointer;
   background-color: var(--stack-icon-btn-bg-color);
-  transition: transform 0.5s ease-out;
-  /*for larger screens*/
-
-  /* width: 12rem; */
-}
-
-.icon-btn:hover {
-  transform: translateY(-1rem);
-  /*for larger screens*/
-
-  /* font-size: 2rem;
-  width: 12rem; */
-  margin: 1rem 0;
-  box-shadow: 0 0 10px var(--stack-icons-color-hover);
 }
 
 .stack-icons {
@@ -477,37 +395,165 @@ span {
   padding: 0.7rem 1rem;
   display: flex;
   align-items: center;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
   border-radius: 5rem;
-}
-
-/*the shadow help pops up the button more to make it more user friendly*/
-
-.darkModeToggle:hover {
-  border: 1px solid var(--toggle-theme-btn-border-hover);
-  box-shadow: 0 0 10px var(--box-menu-shadow);
-}
-
-.hero-btn:hover {
-  background-color: var(--hero-btn-bg-color-hover);
-  color: var(--hero-btn-text-hover);
 }
 
 .toggleThemeText {
   font-size: 1rem;
 }
 
-/*responsiveness for mobile devices*/
-/* @media (max-width: 480px) {
-} */
+/*responsiveness for small screen and mobile devices*/
+@media (max-width: 480px) {
+  .hero-btn-container {
+    justify-content: center;
+  }
+}
 
 /*responsiveness for tablets and small laptops*/
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 800px) {
+  .icon-container {
+    justify-content: space-between;
+  }
+  .content-container {
+    margin: 2rem 1rem;
+  }
+  .nav-bar {
+    padding: 0 3rem;
+  }
+}
+
+/*responsiveness for medium screens*/
+@media (min-width: 801px) and (max-width: 1024px) {
+  .icon-container {
+    justify-content: space-between;
+  }
+  .content-container {
+    margin: 2rem 2rem;
+  }
+  .nav-bar {
+    padding: 0 4rem;
+  }
 }
 
 /*responsiveness for large screens*/
 @media (min-width: 1025px) {
+  .darkModeToggle,
+  .hamburgerToggle,
+  .project-btn {
+    cursor: pointer;
+  }
+  .home:hover,
+  .projects:hover,
+  .about:hover,
+  .contact:hover {
+    background-color: var(--side-menu-bg-color-hover);
+  }
+
+  .home,
+  .project,
+  .about,
+  .contact,
+  .project-btn,
+  .back-btn,
+  .hamburgerToggle,
+  .hero-btn,
+  .hero-btn-about,
+  .darkModeToggle,
+  .icon-btn {
+    transition: all 0.3s ease-out;
+  }
+
+  .darkModeToggle:hover,
+  .hamburgerToggle:hover,
+  .hero-btn-about:hover {
+    box-shadow: 0 0 10px var(--box-10px-shadow);
+  }
+  .project-btn:hover,
+  .icon-btn:hover {
+    box-shadow: 0 0 15px var(--box-20px-shadow);
+  }
+
+  .main-container {
+    margin: 0;
+  }
+
+  .nav-link:hover {
+    color: var(--side-menu-text-hover);
+  }
+
+  .hamburgerToggle:hover {
+    border: 1px solid var(--toggle-theme-btn-border-hover);
+  }
+
+  .darkModeToggle:hover {
+    border: 1px solid var(--toggle-theme-btn-border-hover);
+  }
+
+  .hero-btn:hover {
+    background-color: var(--hero-btn-bg-color-hover);
+    border: 1px solid var(--hero-btn-bg-border-color-hover);
+    color: var(--hero-btn-text-hover);
+  }
+
+  .hero-btn-about:hover {
+    border: 1px solid var(--hero-btn-about-border-hover);
+  }
+
+  .back-btn:hover {
+    color: var(--back-btn-text-color-hover);
+    border: 1px solid var(--back-btn-bg-border-color-hover);
+    background-color: var(--back-btn-bg-color-hover);
+  }
+  .project-btn:hover {
+    border: 1px solid var(--toggle-theme-btn-border-hover);
+  }
+
+  .icon-btn:hover {
+    margin: 1rem 0;
+    transform: scale(1.2) translateY(-1rem);
+  }
+
+  .icon-container {
+    justify-content: start;
+    gap: 3rem;
+  }
+
+  .content-container {
+    margin: 2rem 4rem;
+  }
+  .nav-bar{
+    padding: 0;
+    margin: 0rem 4rem;
+  }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*add system default theme*/
@@ -523,6 +569,6 @@ span {
     --toggle-theme-btn-text: #fafafa;
     --menu-underline: #5d7892;
     --box-nav-shadow: #293641;
-    --box-menu-shadow: #5d7992;
+    --box-10px-shadow: #5d7992;
   }
 } */

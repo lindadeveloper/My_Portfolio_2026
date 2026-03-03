@@ -14,7 +14,7 @@ export default function Header() {
   const toggleMenu = { display: menuOpen ? "block" : "none" };
 
   return (
-    <header className="nav-container">
+    <header>
       <nav className="nav-bar">
         <Link to="/" className="logo">
           Linda Liu
