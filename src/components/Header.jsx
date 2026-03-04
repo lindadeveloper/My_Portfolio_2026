@@ -27,7 +27,10 @@ export default function Header() {
             {hamburger}
           </button>
         </div>
-        <ul className="nav-menu" style={toggleMenu}>
+      </nav>
+
+      <nav className="nav-menu" style={toggleMenu}>
+        <ul>
           <div className="menu-logo">
             <img src="/assets/Linda-avatar.svg" />
             <h1>Linda Liu</h1>
@@ -48,12 +51,6 @@ export default function Header() {
             <NavLink to="about" onClick={menuToggle} className="nav-link">
               <CircleQuestionMark />
               About
-            </NavLink>
-          </li>
-          <li className="contact">
-            <NavLink to="contact" onClick={menuToggle} className="nav-link">
-              <Mail />
-              Contact
             </NavLink>
           </li>
         </ul>

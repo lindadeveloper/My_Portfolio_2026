@@ -11,7 +11,6 @@ const ProjectLayout = lazy(() => import("./layouts/ProjectLayout"));
 const Layout = lazy(() => import("./layouts/Layout"));
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
 const Blogapp = lazy(() => import("./pages/Projects/Blogapp"));
 const ToDoList = lazy(() => import("./pages/Projects/ToDoList"));
 const UXUI = lazy(() => import("./pages/Projects/UXUI"));
@@ -62,7 +61,6 @@ export default function App() {
                 <Route path="/projects/blog-app" element={<Blogapp />} />
                 <Route path="/projects/uxui" element={<UXUI />} />
                 <Route path="about" element={<About />} />
-                <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
           </Suspense>

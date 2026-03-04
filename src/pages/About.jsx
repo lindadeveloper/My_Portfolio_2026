@@ -1,17 +1,31 @@
-import { HiChatBubbleLeft } from "react-icons/hi2";
+// import { HiChatBubbleLeft } from "react-icons/hi2";
+import { Send } from "lucide-react";
+import { useState } from "react";
 
 export default function About() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyText = async () => {
+    try {
+      await navigator.clipboard.writeText("lindacodesdev@gmail.com");
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 1500);
+    } catch (err) {
+      console.log("Failed to copy: ", err);
+    }
+  };
+
   return (
     <section className="content-container">
       <div className="about-container">
         <div>
-          <div className="chat-text">
+          {/* <div className="chat-text">
             <span className="text-label">Hi!</span>
             <HiChatBubbleLeft size="6rem" className="mirror-icon" />
-          </div>
+          </div> */}
           <img src="/assets/Linda-profile.png" className="profile-img" />
         </div>
-        <div>
+        <div className="about-content">
           <h1>About me</h1>
           <p className="p1">
             I’m a lifelong learner who continuously improves her skills by staying consistent, being
@@ -26,6 +40,11 @@ export default function About() {
             long way in life and in software development.🙂
           </p>
         </div>
+        <h2>Let's chat! </h2>
+        <button className="email-btn" onClick={copyText}>
+          <Send />
+          <span className="email">{isCopied ? "Copied!" : "lindacodesdev@gmail.com"}</span>
+        </button>
       </div>
     </section>
   );
