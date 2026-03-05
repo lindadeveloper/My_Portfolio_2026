@@ -4,7 +4,7 @@ import {
   FaCss3Alt,
   FaReact,
   FaNodeJs,
-  FaGithub,
+  FaGitAlt,
   FaPython,
   FaFigma,
   FaUserCheck,
@@ -30,62 +30,65 @@ export default function Home() {
           My projects
         </Link>
       </div>
-      <h2>Tech Stacks</h2>
-      <div className="icon-container">
-        <button className="icon-btn">
-          <FaHtml5 className="stack-icons" />
-          <span>HTML</span>
-        </button>
-        <button className="icon-btn">
-          <FaCss3Alt className="stack-icons" />
-          <span>CSS</span>
-        </button>
-        <button className="icon-btn">
-          <RiJavascriptFill className="stack-icons" />
-          <span>JavaScript</span>
-        </button>
-        <button className="icon-btn">
-          <FaReact className="stack-icons" />
-          <span>React</span>
-        </button>
-        <button className="icon-btn">
-          <FaNodeJs className="stack-icons" />
-          <span>Node.js</span>
-        </button>
-        <button className="icon-btn">
-          <FaPython className="stack-icons" />
-          <span>Python</span>
-        </button>
-        <button className="icon-btn">
-          <span>More to come...</span>
-        </button>
-      </div>
-      <h2>Tools</h2>
-      <div className="icon-container">
-        <button className="icon-btn">
-          <FaGithub className="stack-icons" />
-          <span>Github</span>
-        </button>
-        <button className="icon-btn">
-          <FaFigma className="stack-icons" />
-          <span>Figma</span>
-        </button>
-        <button className="icon-btn">
-          <FaUserCheck className="stack-icons" />
-          <span>UX / UI</span>
-        </button>
-        <button className="icon-btn">
-          <FaBootstrap className="stack-icons" />
-          <span>Bootstrap</span>
-        </button>
-        <button className="icon-btn">
-          <DiPhotoshop className="stack-icons" />
-          <span>Photoshop</span>
-        </button>
-        <button className="icon-btn">
-          <DiIllustrator className="stack-icons" />
-          <span>Illustrator</span>
-        </button>
+      <h2 className="sub-title">My Skills</h2>
+      <div className="stacks-wrapper">
+        <h3>Tech Stacks</h3>
+        <div className="icon-container">
+          <button className="icon-btn">
+            <FaHtml5 className="stack-icons" />
+            <span>HTML</span>
+          </button>
+          <button className="icon-btn">
+            <FaCss3Alt className="stack-icons" />
+            <span>CSS</span>
+          </button>
+          <button className="icon-btn">
+            <RiJavascriptFill className="stack-icons" />
+            <span>JavaScript</span>
+          </button>
+          <button className="icon-btn">
+            <FaReact className="stack-icons" />
+            <span>React</span>
+          </button>
+          <button className="icon-btn">
+            <FaNodeJs className="stack-icons" />
+            <span>Node.js</span>
+          </button>
+          <button className="icon-btn">
+            <FaPython className="stack-icons" />
+            <span>Python</span>
+          </button>
+          <button className="icon-btn">
+            <span>More to come...</span>
+          </button>
+        </div>
+        <h3>Tools</h3>
+        <div className="icon-container">
+          <button className="icon-btn">
+            <FaGitAlt className="stack-icons" />
+            <span>Git / GitHub</span>
+          </button>
+          <button className="icon-btn">
+            <FaFigma className="stack-icons" />
+            <span>Figma</span>
+          </button>
+          <button className="icon-btn">
+            <FaUserCheck className="stack-icons" />
+            <span>UX / UI</span>
+          </button>
+          <button className="icon-btn">
+            <FaBootstrap className="stack-icons" />
+            <span>Bootstrap</span>
+          </button>
+          <button className="icon-btn">
+            <DiPhotoshop className="stack-icons" />
+            <span>Photoshop</span>
+          </button>
+          <button className="icon-btn">
+            <DiIllustrator className="stack-icons" />
+            <span>Illustrator</span>
+          </button>
+        </div>
       </div>
     </section>
   );

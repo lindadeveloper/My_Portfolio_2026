@@ -1,6 +1,6 @@
 import ToggleTheme from "./ToggleTheme";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, House, Presentation, CircleQuestionMark, Mail } from "lucide-react";
+import { Menu, X, House, Presentation, CircleQuestionMark, GraduationCap } from "lucide-react";
 import { useState } from "react";
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
   const toggleMenu = { display: menuOpen ? "block" : "none" };
 
   return (
-    <header>
+    <header id="top">
       <nav className="nav-bar">
         <Link to="/" className="logo">
           Linda Liu
@@ -45,6 +45,12 @@ export default function Header() {
             <NavLink to="projects" onClick={menuToggle} className="nav-link">
               <Presentation />
               Projects
+            </NavLink>
+          </li>
+          <li className="education">
+            <NavLink to="education" onClick={menuToggle} className="nav-link">
+              <GraduationCap />
+              Education
             </NavLink>
           </li>
           <li className="about">
