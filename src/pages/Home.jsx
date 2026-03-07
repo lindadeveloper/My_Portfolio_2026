@@ -37,7 +37,7 @@ export default function Home() {
               <a
                 href="https://github.com/lindadeveloper"
                 alt="github"
-                title="Github"
+                title="GitHub"
                 target="_blank"
                 className="link-icon"
               >
@@ -47,7 +47,7 @@ export default function Home() {
                 href=""
                 alt="download"
                 target="_blank"
-                title="Download Resumé"
+                title="Download resumé"
                 className="link-icon"
               >
                 <MdDownload size={24} />
@@ -55,7 +55,7 @@ export default function Home() {
               <a
                 href="mailto:lindacodesdev@gmail.com"
                 alt="email"
-                title="Email"
+                title="E-mail"
                 className="link-icon"
               >
                 <Mail size={24} />
@@ -63,9 +63,9 @@ export default function Home() {
             </div>
           </div>
           <p className="p1-home">
-            I'm a <span className="em-text">Front-End Developer</span> who builds clean, responsive,
-            and user-centered interfaces that are intuitive, accessible and user-friendly. I also
-            have experience in e-commerce and a strong eye for design.
+            I'm a <span className="em-text">Front-End Developer</span> who builds responsive, and
+            user-centered interfaces that are intuitive, accessible and effective. I also have
+            experience in e-commerce and a strong eye for design.
           </p>
           <div className="hero-btn-container">
             <Link to="about" className="hero-btn-about">
