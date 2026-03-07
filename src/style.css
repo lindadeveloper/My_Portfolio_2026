@@ -102,17 +102,22 @@ body {
   overflow-x: hidden;
 }
 
+.p1-home,
 .p1,
 .p2,
 .p-default {
-  line-height: 1.8rem;
-  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
+.p1-home,
 .p2,
 .p1 {
   margin: 1.5rem 0;
   max-width: 600px;
+}
+
+.p1-home {
+  text-align: center;
 }
 
 .opaque-text {
@@ -126,7 +131,6 @@ body {
 .opaque-text,
 .opaque-logo-text {
   margin: 1rem 0 2rem 0;
-  font-size: 1.2rem;
   color: var(--sub-title-color);
 }
 
@@ -159,6 +163,7 @@ header,
   display: flex;
 }
 
+/*Front-end developer homepage title*/
 .em-text {
   font-size: 1.5rem;
   font-weight: 700;
@@ -179,14 +184,10 @@ header,
   min-width: 100vw;
 }
 
-.skills-container {
-  margin-top: 3rem;
-}
-
 .education-container,
 .site-wrapper,
 .content-container {
-  max-width: 1100px;
+  max-width: 1000px;
 }
 
 .sub-title {
@@ -268,10 +269,14 @@ header,
   text-decoration: none;
   gap: 0.5rem;
   width: 100%;
-  font-size: 1.2rem;
 }
 
-/*this gives a consistent structure to the page*/
+/*this gives a consistent structure to the nav bar and content section*/
+
+.nav-bar {
+  padding: 0 2rem;
+}
+
 .main-container {
   margin: 0 2rem;
 }
@@ -406,13 +411,11 @@ header,
   border: 1px solid var(--hero-btn-bg-border-color);
   background-color: var(--hero-btn-bg-color);
   color: var(--hero-btn-text);
-  font-size: 1.2rem;
 }
 
 .hero-btn-about {
   color: var(--hero-btn-about-text);
   border: 1px solid var(--hero-btn-about-border);
-  font-size: 1.2rem;
 }
 
 /*this is below the hero section*/
@@ -465,7 +468,6 @@ header,
   border-radius: 1rem;
   border: none;
   color: var(--stack-icons-color);
-  font-size: 1rem;
 }
 
 .certificate-globe-wrapper {
@@ -489,14 +491,14 @@ header,
   padding: 1rem 1rem;
   margin: 1rem 0;
   text-align: center;
-  font-size: 1rem;
+
   border-radius: 1rem;
   border: none;
   background-color: var(--stack-icon-btn-bg-color);
 }
 
 .stack-icons {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   font-size: 3rem;
   color: var(--stack-icons-color);
 }
@@ -573,7 +575,7 @@ header,
 }
 
 /*responsiveness for small screen and mobile devices*/
-@media (max-width: 480px) {
+@media (max-width: 699px) {
   .hero-btn-container {
     justify-content: center;
   }
@@ -585,16 +587,14 @@ header,
   .content-container {
     margin: 2rem 0rem;
   }
-  .nav-bar {
-    margin: 0 2rem;
-  }
+
   .hero-image {
     display: none;
   }
 }
 
 /*responsiveness for tablets and small laptops*/
-@media (min-width: 481px) and (max-width: 820px) {
+@media (min-width: 700px) and (max-width: 820px) {
   .nav-link {
     padding: 2rem 4rem;
   }
@@ -610,6 +610,11 @@ header,
     display: flex;
     justify-content: center;
   }
+
+  .hero-image {
+    display: block;
+    max-width: 340px;
+  }
   .icon-container {
     justify-content: space-between;
   }
@@ -617,9 +622,7 @@ header,
   .content-container {
     margin: 2rem 1rem;
   }
-  .nav-bar {
-    margin: 0 3rem;
-  }
+
   .nav-menu {
     left: 0;
   }
@@ -649,6 +652,10 @@ header,
     max-width: 400px;
   }
 
+  .hero-left {
+    max-width: 450px;
+  }
+
   .icon-container {
     justify-content: space-between;
   }
@@ -656,9 +663,7 @@ header,
   .content-container {
     margin: 2rem 2rem;
   }
-  .nav-bar {
-    padding: 0 4rem;
-  }
+
   .nav-menu {
     left: 0;
   }
@@ -672,8 +677,12 @@ header,
 
 /*responsiveness for large screens*/
 @media (min-width: 1025px) {
+  .p1-home {
+    text-align: unset;
+  }
   .p2,
   .p1,
+  .p1-home,
   .p-default {
     animation: fadeInUp 1s ease forwards;
   }
@@ -741,11 +750,16 @@ header,
   }
   .hero-image {
     display: block;
-    max-width: 450px;
+    max-width: 420px;
   }
 
   .hero-title {
     flex-direction: row;
+    gap: unset;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
   }
 
   .nav-link:hover {
@@ -783,15 +797,21 @@ header,
     border: 1px solid var(--project-border-hover);
   }
 
+  .stacks-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+  .icon-container {
+    justify-content: start;
+    gap: 3rem;
+  }
+
   .icon-btn:hover {
     margin: 1rem 0;
     transform: scale(1.2) translateY(-1rem);
   }
 
-  .icon-container {
-    justify-content: start;
-    gap: 3rem;
-  }
   .education-container,
   .content-container {
     margin: 5rem 1rem 0 1rem;
@@ -804,14 +824,17 @@ header,
   .nav-bar {
     z-index: 1000;
     height: 10rem;
-    padding: 0 3rem;
-    max-width: 1200px;
+    max-width: 1065px;
+  }
+
+  .hero-left {
+    max-width: 540px;
   }
 
   .nav-menu {
     height: fit-content;
     border-radius: 2rem;
-    margin: 9.5rem 42rem;
+    margin: 9.5rem 37.5rem;
     width: max-content;
     box-shadow: none;
     border: 1px solid var(--side-menu-border);
@@ -824,7 +847,7 @@ header,
   }
 
   .nav-link {
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     border-top: 1px solid var(--side-menu-border);
     border-right: 1px solid var(--side-menu-border);
   }

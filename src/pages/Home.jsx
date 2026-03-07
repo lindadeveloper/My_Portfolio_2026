@@ -16,20 +16,8 @@ import { Mail } from "lucide-react";
 import { MdDownload } from "react-icons/md";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
-import { useState } from "react";
 
 export default function Home() {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const copyText = async () => {
-    try {
-      await navigator.clipboard.writeText("lindacodesdev@gmail.com");
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 1500);
-    } catch (err) {
-      console.log("Failed to copy: ", err);
-    }
-  };
   return (
     <section className="content-container ">
       <div className="hero-container">
@@ -44,7 +32,7 @@ export default function Home() {
                 target="_blank"
                 className="link-icon"
               >
-                <FaLinkedin size={35} />
+                <FaLinkedin size={24} />
               </a>
               <a
                 href="https://github.com/lindadeveloper"
@@ -53,7 +41,7 @@ export default function Home() {
                 target="_blank"
                 className="link-icon"
               >
-                <FaGithub size={35} />
+                <FaGithub size={24} />
               </a>
               <a
                 href=""
@@ -62,19 +50,19 @@ export default function Home() {
                 title="Download Resumé"
                 className="link-icon"
               >
-                <MdDownload size={35} />
+                <MdDownload size={24} />
               </a>
-              <button
-                className="link-icon-mail"
-                alt="e-mail"
-                title="Copy E-mail"
-                onClick={copyText}
+              <a
+                href="mailto:lindacodesdev@gmail.com"
+                alt="email"
+                title="Email"
+                className="link-icon"
               >
-                <span>{isCopied ? "E-mail Copied!" : <Mail size={35} />}</span>
-              </button>
+                <Mail size={24} />
+              </a>
             </div>
           </div>
-          <p className="p1">
+          <p className="p1-home">
             I'm a <span className="em-text">Front-End Developer</span> who builds clean, responsive,
             and user-centered interfaces that are intuitive, accessible and user-friendly. I also
             have experience in e-commerce and a strong eye for design.
