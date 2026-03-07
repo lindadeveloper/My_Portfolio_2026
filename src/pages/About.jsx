@@ -41,7 +41,7 @@ export default function About() {
           </p>
         </div>
         <h2>Let's chat! </h2>
-        <button className="email-btn" onClick={copyText}>
+        <button className="email-btn" alt="E-mail" title="Copy E-mail" onClick={copyText}>
           <Send />
           <span className="email">{isCopied ? "Copied!" : "lindacodesdev@gmail.com"}</span>
         </button>

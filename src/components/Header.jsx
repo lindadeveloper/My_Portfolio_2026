@@ -1,8 +1,17 @@
 import ToggleTheme from "./ToggleTheme";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, House, Presentation, CircleQuestionMark, GraduationCap } from "lucide-react";
+import {
+  Menu,
+  X,
+  House,
+  Presentation,
+  CircleQuestionMark,
+  GraduationCap,
+  Mail,
+} from "lucide-react";
 import { useState } from "react";
 import { CiCircleChevUp } from "react-icons/ci";
+import { MdDownload } from "react-icons/md";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,6 +67,12 @@ export default function Header() {
                 <NavLink to="about" onClick={menuToggle} className="nav-link">
                   <CircleQuestionMark />
                   About
+                </NavLink>
+              </li>
+              <li className="contact">
+                <NavLink to="contact" onClick={menuToggle} className="nav-link">
+                  <Mail />
+                  Contact
                 </NavLink>
               </li>
             </div>

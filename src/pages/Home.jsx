@@ -11,9 +11,9 @@ import {
   FaBootstrap,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
 } from "react-icons/fa";
 import { Mail } from "lucide-react";
+import { MdDownload } from "react-icons/md";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
 import { useState } from "react";
@@ -40,6 +40,7 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/lindadeveloper/"
                 alt="linkedin"
+                title="Linkedin"
                 target="_blank"
                 className="link-icon"
               >
@@ -48,20 +49,27 @@ export default function Home() {
               <a
                 href="https://github.com/lindadeveloper"
                 alt="github"
+                title="Github"
                 target="_blank"
                 className="link-icon"
               >
                 <FaGithub size={35} />
               </a>
               <a
-                href="https://x.com/LindaDeveloper"
-                alt="twitter"
+                href=""
+                alt="download"
                 target="_blank"
+                title="Download Resumé"
                 className="link-icon"
               >
-                <FaTwitter size={35} />
+                <MdDownload size={35} />
               </a>
-              <button className="link-icon-mail" onClick={copyText}>
+              <button
+                className="link-icon-mail"
+                alt="e-mail"
+                title="Copy E-mail"
+                onClick={copyText}
+              >
                 <span>{isCopied ? "E-mail Copied!" : <Mail size={35} />}</span>
               </button>
             </div>
