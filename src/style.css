@@ -56,10 +56,10 @@
   color-scheme: dark;
   --main-bg-color: #1a1b22;
   --main-text-color: #fafafa;
-  --scroll-arrow-color: #4c7394;
+  --scroll-arrow-color: #658fb4;
   --scroll-arrow-hover: #fafafa;
   --project-border: #2a3242;
-  --project-border-hover: #4c7394;
+  --project-border-hover: #658fb4;
   --toggle-theme-btn-border: #658fb4;
   --toggle-theme-btn-border-hover: #658fb4;
   --toggle-theme-btn-bg-color: transparent;
@@ -85,7 +85,7 @@
   --hero-btn-bg-color-hover: #fafafa;
   --hero-btn-text-hover: #1a1b22;
   --globe-icon-color: #223f58;
-  --link-icon-color: #4c7394;
+  --link-icon-color: #658fb4;
   --link-text-color: #fafafa;
   --stack-icons-color: #658fb4;
   --stack-icon-btn-bg-color: #1a1b22;
@@ -857,17 +857,10 @@ header,
   /* .back-to-top-arrow:hover {
     color: var(--scroll-arrow-hover);
   } */
-  .hamburgerToggle:hover {
-    border: 1px solid var(--toggle-theme-btn-border-hover);
-  }
 
   /* .darkModeToggle {
     margin-right: 5rem;
   } */
-
-  .darkModeToggle:hover {
-    border: 1px solid var(--toggle-theme-btn-border-hover);
-  }
 
   .hero-btn:hover {
     background-color: var(--hero-btn-bg-color-hover);

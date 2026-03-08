@@ -42,7 +42,11 @@ Solution: I use the dev tool to analyze the problem. I realized the nav-menu is 
 
 ---
 
-What else I can do:
+What to improve on:
+CSS:
+Change the variabl CSS names and re-use the variable names where colors are the same.
+
+Performance:
 
 1. Replacing heavy libraries with native code.
 2. I will also try removing unused dependencies by doing npm uninstall moment once I finish the project.
