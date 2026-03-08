@@ -23,7 +23,7 @@ export default function About() {
             <span className="text-label">Hi!</span>
             <HiChatBubbleLeft size="6rem" className="mirror-icon" />
           </div> */}
-          <img src="/assets/Linda-profile.png" className="profile-img" />
+          <img src="/assets/Linda-profile.svg" className="profile-img" />
         </div>
         <div className="about-content">
           <h1>About me</h1>
