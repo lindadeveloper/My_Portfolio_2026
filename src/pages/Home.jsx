@@ -83,60 +83,60 @@ export default function Home() {
         <div className="stacks-wrapper">
           <h3>Tech Stacks</h3>
           <div className="icon-container">
-            <button className="icon-btn">
+            <i className="icon-btn">
               <FaHtml5 className="stack-icons" />
               <span>HTML</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaCss3Alt className="stack-icons" />
               <span>CSS</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <RiJavascriptFill className="stack-icons" />
               <span>JavaScript</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaReact className="stack-icons" />
               <span>React</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaNodeJs className="stack-icons" />
               <span>Node.js</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaPython className="stack-icons" />
               <span>Python</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <span>More to come...</span>
-            </button>
+            </i>
           </div>
           <h3>Tools</h3>
           <div className="icon-container">
-            <button className="icon-btn">
+            <i className="icon-btn">
               <FaGitAlt className="stack-icons" />
               <span>Git / GitHub</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaFigma className="stack-icons" />
               <span>Figma</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaUserCheck className="stack-icons" />
               <span>UX / UI</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <FaBootstrap className="stack-icons" />
               <span>Bootstrap</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <DiPhotoshop className="stack-icons" />
               <span>Photoshop</span>
-            </button>
-            <button className="icon-btn">
+            </i>
+            <i className="icon-btn">
               <DiIllustrator className="stack-icons" />
               <span>Illustrator</span>
-            </button>
+            </i>
           </div>
         </div>
       </div>

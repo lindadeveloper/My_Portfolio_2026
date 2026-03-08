@@ -74,7 +74,7 @@ export default function Contact() {
             </div>
           </a>
 
-          {/* <a href="https://medium.com/@lindadeveloper" className="links-container" target="_blank">
+          <a href="https://medium.com/@lindadeveloper" className="links-container" target="_blank">
             <p className="key-text">
               <FaMedium size={20} className="value-icon" title="Medium" />
               Medium
@@ -84,7 +84,11 @@ export default function Contact() {
             </div>
           </a>
 
-          <a href="https://www.youtube.com/@lindadeveloper" className="links-container" target="_blank">
+          <a
+            href="https://www.youtube.com/@lindadeveloper"
+            className="links-container"
+            target="_blank"
+          >
             <p className="key-text">
               <FaYoutube size={20} className="value-icon" title="YouTube" />
               YouTube
@@ -92,7 +96,7 @@ export default function Contact() {
             <div className="value-wrap">
               <p className="value-text">@LindaDeveloper</p>
             </div>
-          </a> */}
+          </a>
         </div>
       </div>
     </section>

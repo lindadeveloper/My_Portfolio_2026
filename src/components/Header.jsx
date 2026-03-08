@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { CiCircleChevUp } from "react-icons/ci";
-import { MdDownload } from "react-icons/md";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,12 +78,12 @@ export default function Header() {
           </ul>
         </nav>
       </nav>
-      <button className="back-to-top-btn" aria-label="Back to top">
+      {/* <button className="back-to-top-btn" aria-label="Back to top">
         <a className="back-to-top-arrow" href="#top">
           <CiCircleChevUp size={50} />
         </a>
         UP
-      </button>
+      </button> */}
     </header>
   );
 }
