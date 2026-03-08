@@ -389,6 +389,7 @@ header,
 .hamburgerToggle {
   border: 1px solid var(--toggle-theme-btn-border);
   background-color: var(--toggle-theme-btn-bg-color);
+  color: var(--main-text-color);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
 }
