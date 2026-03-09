@@ -3,6 +3,8 @@ import { MdDownload } from "react-icons/md";
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaMedium, FaYoutube } from "react-icons/fa";
 import { PiXLogo } from "react-icons/pi";
+import { ChevronsLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
@@ -19,6 +21,10 @@ export default function Contact() {
 
   return (
     <section className="content-container">
+      <Link to="../education" className="back-btn-middle">
+        <ChevronsLeft />
+        Education
+      </Link>
       <div className="contact-container">
         <div className="contact-links">
           <h1 className="contact-h1">Git in touch!</h1>

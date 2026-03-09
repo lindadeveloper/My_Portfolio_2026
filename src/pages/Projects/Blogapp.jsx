@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { MoveLeft } from "lucide-react";
+import { ChevronsLeft } from "lucide-react";
 
 export default function Blogapp() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
-        <MoveLeft /> Back to all Projects
+        <ChevronsLeft /> Back to all Projects
       </Link>
       <h1 className="project-title">Blog App</h1>
       <p className="p-default">

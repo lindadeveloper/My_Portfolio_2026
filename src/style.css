@@ -49,6 +49,8 @@
   --nav-bar-shadow: #bbbbbb;
   --email-btn-border: #4c7394;
   --sub-title-color: #4c7394;
+  --back-btn-text-color: #4c7394;
+  --back-btn-text-color-hover: #222222;
   /* --chat-text-color: #fafafa; */
 }
 
@@ -92,6 +94,8 @@
   --nav-bar-shadow: #658fb4;
   --email-btn-border: #658fb4;
   --sub-title-color: #658fb4;
+  --back-btn-text-color: #3e4e6d;
+  --back-btn-text-color-hover: #fafafa;
   /* --chat-text-color: #1a1b22; */
 }
 
@@ -197,7 +201,6 @@ i {
 }
 
 .sub-title {
-  margin-bottom: 2rem;
   color: var(--sub-title-color);
 }
 
@@ -299,7 +302,6 @@ i {
 /*this will help prevent users from clicking on the wrong area*/
 .profile-img {
   width: 250px;
-  margin-bottom: 1rem;
 }
 
 /* .chat-text {
@@ -345,7 +347,10 @@ i {
 
 .contact-h1 {
   text-align: center;
-  margin-bottom: 2rem;
+}
+
+.project-container {
+  margin-top: 2rem;
 }
 
 .project-btn {
@@ -361,16 +366,20 @@ i {
   text-decoration: none;
 }
 
+.profile-img,
+.contact-h1,
+.sub-title,
 .project-title {
   margin: 2rem 0 1.5rem 0;
 }
 
+.back-btn-middle,
 .back-btn {
   padding: 1rem 1rem 1rem 0;
   text-decoration: none;
   color: var(--back-btn-text-color);
   display: flex;
-  justify-content: center;
+  width: fit-content;
   gap: 0.5rem;
 }
 
@@ -695,9 +704,6 @@ i {
   .nav-menu {
     left: 0;
   }
-  .back-btn {
-    width: fit-content;
-  }
 
   .edu-container {
     display: flex;
@@ -748,9 +754,7 @@ i {
   .nav-menu {
     left: 0;
   }
-  .back-btn {
-    width: fit-content;
-  }
+
   .edu-container {
     display: flex;
   }
@@ -824,8 +828,15 @@ i {
   .links-container-long-text,
   .value-icon:hover,
   .link-icon:hover,
-  .stacks-wrapper {
+  .stacks-wrapper,
+  .back-btn,
+  .back-btn-middle {
     transition: all 0.3s ease-in-out;
+  }
+
+  .back-btn:hover,
+  .back-btn-middle:hover {
+    color: var(--back-btn-text-color-hover);
   }
 
   .nav-menu:hover,
@@ -955,10 +966,6 @@ i {
     margin: 0 66rem;
     padding: 0; */
     background-color: transparent;
-  }
-
-  .back-btn {
-    width: fit-content;
   }
 
   /* .back-to-top-btn {

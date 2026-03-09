@@ -1,5 +1,6 @@
 // import { HiChatBubbleLeft } from "react-icons/hi2";
-import { Send } from "lucide-react";
+import { Send, ChevronsLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function About() {
@@ -17,6 +18,10 @@ export default function About() {
 
   return (
     <section className="content-container">
+      <Link to="../contact" className="back-btn-middle">
+        <ChevronsLeft />
+        Contact
+      </Link>
       <div className="about-container">
         <div>
           {/* <div className="chat-text">

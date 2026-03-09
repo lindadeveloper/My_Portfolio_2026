@@ -57,7 +57,10 @@ I checked these one by one
 
 What to improve on:
 CSS:
-Change the variabl CSS names and re-use the variable names where colors are the same.
+Change the variable CSS names and re-use the variable names where colors are the same.
+
+Components:
+Move codes in a separate dedicated component to make it more clean and manageable.
 
 Performance:
 
