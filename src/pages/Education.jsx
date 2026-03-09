@@ -28,7 +28,7 @@ export default function Education() {
             <h4 className="opaque-logo-text">Scrimba</h4>
           </div>
           <div>
-            <h3>Front-End Developer Path</h3>
+            <h3>Front-End Developer Path 2025~2026</h3>
             <p className="opaque-text">
               Designed and developed responsive web applications using HTML, CSS, JavaScript, and
               React. Integrated APIs, managed version control with Git, and deployed projects in

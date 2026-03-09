@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
-export default function UXUI() {
+export default function RecipeApp() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
         <ChevronLeft /> Back to all Projects
       </Link>
-      <h1 className="project-title">UX UI Projects</h1>
+      <h1 className="project-title">Recipe Finder</h1>
       <div className="live-demo-github-link-wrapper">
         <a href="" alt="Live Demo Budget App" className="live-demo-github">
           Live Demo

@@ -19,9 +19,9 @@ export default function About() {
   return (
     <section className="content-container">
       <div className="breadcrumb">
-        <Link to="/" className="back-btn">
+        <Link to="../projects" className="back-btn">
           <ChevronLeft />
-          Home
+          Projects
         </Link>
         <Link to="../contact" className="back-btn-middle">
           <ChevronLeft />

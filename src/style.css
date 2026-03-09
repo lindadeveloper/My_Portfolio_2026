@@ -32,6 +32,7 @@
   --side-menu-shadow: #a0a0a0;
   --footer-text-color: #999999;
   --footer-text-link: #4f85e9;
+  --live-demo-github-link: #004cd8;
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #222222;
   --hero-btn-about-border: #4c7394;
@@ -77,6 +78,7 @@
   --side-menu-shadow: #658fb4;
   --footer-text-color: #7899b6;
   --footer-text-link: #71a3ff;
+  --live-demo-github-link: #4376d4;
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #fafafa;
   --hero-btn-about-border: #658fb4;
@@ -117,6 +119,10 @@ i {
   background-color: var(--main-bg-color);
 }
 
+.project-p {
+  margin-top: 2rem;
+}
+
 .p1-home,
 .p1,
 .p2,
@@ -145,7 +151,7 @@ i {
 
 .opaque-text,
 .opaque-logo-text {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0;
   color: var(--sub-title-color);
 }
 
@@ -204,6 +210,10 @@ i {
   color: var(--sub-title-color);
 }
 
+.live-demo-github {
+  text-underline-offset: 0.2rem;
+  color: var(--live-demo-github-link);
+}
 .education-container,
 .nav-bar,
 .content-container {
@@ -483,7 +493,19 @@ i {
   border: 1px solid var(--project-border);
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.project-lang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.live-demo-github-link-wrapper {
+  display: flex;
+  gap: 1rem;
+  max-width: fit-content;
 }
 
 .globe-icon {

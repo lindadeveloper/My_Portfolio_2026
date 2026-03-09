@@ -1,14 +1,25 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
-export default function Blogapp() {
+export default function BudgetApp() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
         <ChevronLeft /> Back to all Projects
       </Link>
-      <h1 className="project-title">Blog App</h1>
-      <p className="p-default">
+      <h1 className="project-title">Budget App</h1>
+      <div className="live-demo-github-link-wrapper">
+        <a href="" alt="Live Demo Budget App" className="live-demo-github">
+          Live Demo
+        </a>
+        <span>|</span>
+        <a href="" alt="Live Demo Budget App" className="live-demo-github">
+          GitHub
+        </a>
+        <span>|</span>
+        <p>Short description</p>
+      </div>
+      <p className="p-default project-p">
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
         pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
         aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.

@@ -22,9 +22,9 @@ export default function Contact() {
   return (
     <section className="content-container">
       <div className="breadcrumb">
-        <Link to="/" className="back-btn">
+        <Link to="../projects" className="back-btn">
           <ChevronLeft />
-          Home
+          Projects
         </Link>
         <Link to="../about" className="back-btn-middle">
           <ChevronLeft />

@@ -13,8 +13,9 @@ const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Education = lazy(() => import("./pages/Education"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Blogapp = lazy(() => import("./pages/Projects/Blogapp"));
-const ToDoList = lazy(() => import("./pages/Projects/ToDoList"));
+const BudgetApp = lazy(() => import("./pages/Projects/BudgetApp"));
+const AptSearch = lazy(() => import("./pages/Projects/AptSearch"));
+const RecipeApp = lazy(() => import("./pages/Projects/RecipeApp"));
 const UXUI = lazy(() => import("./pages/Projects/UXUI"));
 
 export default function App() {
@@ -60,8 +61,9 @@ export default function App() {
                 <Route index element={<Home />} />
 
                 <Route path="projects" element={<ProjectLayout />} />
-                <Route path="/projects/to-do-list-app" element={<ToDoList />} />
-                <Route path="/projects/blog-app" element={<Blogapp />} />
+                <Route path="/projects/recipe-app" element={<RecipeApp />} />
+                <Route path="/projects/apt-search-tool" element={<AptSearch />} />
+                <Route path="/projects/budget-app" element={<BudgetApp />} />
                 <Route path="/projects/uxui" element={<UXUI />} />
                 <Route path="about" element={<About />} />
                 <Route path="education" element={<Education />} />

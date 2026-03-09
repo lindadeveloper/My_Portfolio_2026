@@ -25,14 +25,47 @@ export default function ProjectLayout() {
         </Link>
       </div>
       <div className="project-container">
-        <Link to="to-do-list-app" className="project-btn">
-          To-Do List App
+        <Link to="budget-app" className="project-btn project-lang">
+          Budget App
+          <div className="lang-learned-wrapper">
+            <span className="lang-learned">React</span>
+            <span className="lang-learned">Javascript</span>
+            <span className="lang-learned">HTML</span>
+            <span className="lang-learned">CSS</span>
+            <span className="lang-learned">API requests</span>
+          </div>
         </Link>
-        <Link to="blog-app" className="project-btn">
-          Blog App
+        <Link to="Recipe-app" className="project-btn project-lang">
+          Recipe Finder
+          <div className="lang-learned-wrapper">
+            <span className="lang-learned">React</span>
+            <span className="lang-learned">Javascript</span>
+            <span className="lang-learned">HTML</span>
+            <span className="lang-learned">CSS</span>
+            <span className="lang-learned">API requests</span>
+          </div>
         </Link>
-        <Link to="uxui" className="project-btn">
+        <Link to="apt-search-tool" className="project-btn project-lang">
+          Apartment Search Tool
+          <div className="lang-learned-wrapper">
+            <span className="lang-learned">React</span>
+            <span className="lang-learned">Javascript</span>
+            <span className="lang-learned">HTML</span>
+            <span className="lang-learned">CSS</span>
+            <span className="lang-learned">API requests</span>
+          </div>
+        </Link>
+        <Link to="uxui" className="project-btn project-lang">
           UX UI projects
+          <div className="lang-learned-wrapper">
+            <span className="lang-learned">Figma (Design Software)</span>
+            <span className="lang-learned">UX/UI Research</span>
+            <span className="lang-learned">User Testing</span>
+            <span className="lang-learned">Persona (User Experience)</span>
+            <span className="lang-learned">Storyboarding</span>
+            <span className="lang-learned">Mobile Development</span>
+            <span className="lang-learned">Responsive Web Design</span>
+          </div>
         </Link>
       </div>
     </section>
