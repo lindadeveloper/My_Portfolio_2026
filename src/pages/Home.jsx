@@ -55,7 +55,7 @@ export default function Home() {
               <a
                 href="mailto:lindacodesdev@gmail.com"
                 alt="email"
-                title="E-mail"
+                title="lindacodesdev@gmail.com"
                 className="link-icon"
               >
                 <Mail size={24} />

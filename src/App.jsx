@@ -49,6 +49,7 @@ export default function App() {
   //     return "light";
   //   }
   // }
+
   return (
     <ThemeContext.Provider value={{ currentTheme, themeToggle, darkTheme }}>
       <div className="site-wrapper" data-theme={currentTheme}>

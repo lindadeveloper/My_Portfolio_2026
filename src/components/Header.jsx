@@ -9,12 +9,46 @@ import {
   GraduationCap,
   Mail,
 } from "lucide-react";
-import { useState } from "react";
-import { CiCircleChevUp } from "react-icons/ci";
+import { useState, useRef, useEffect } from "react";
+// import { CiCircleChevUp } from "react-icons/ci";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
+  /*On scroll, the nav bar show shadow*/
+  useEffect(() => {
+    function handleScroll() {
+      setScroll(window.scrollY > 0 ? true : false);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  /*Closes the menu when clicked outside of the menu*/
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    }
+    document.addEventListener("pointerdown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("pointerdown", handleClickOutside);
+    };
+  }, []);
+
+  /*Toggle open /closes the menu when clicked on the hamburger button*/
   function menuToggle() {
     setMenuOpen((prevMenuState) => !prevMenuState);
   }
@@ -23,7 +57,8 @@ export default function Header() {
   const toggleMenu = { display: menuOpen ? "block" : "none" };
 
   return (
-    <header id="top">
+    // <header id="top">
+    <header className={scroll ? "header-nav-bar scrolled" : "header-nav-bar"}>
       <nav className="nav-bar">
         <Link to="/" className="logo">
           Linda Liu
@@ -31,13 +66,13 @@ export default function Header() {
         <div className="theme-btn">
           <ToggleTheme />
         </div>
-        <div className="ham-btn">
+        <div className="ham-btn" ref={buttonRef}>
           <button onClick={menuToggle} className="hamburgerToggle">
             {hamburger}
           </button>
         </div>
 
-        <nav className="nav-menu" style={toggleMenu}>
+        <nav className="nav-menu" style={toggleMenu} ref={menuRef}>
           <ul>
             <div className="menu-logo">
               <img src="/assets/Linda-avatar.svg" />

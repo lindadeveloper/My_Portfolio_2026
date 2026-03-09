@@ -40,6 +40,19 @@ Solution: I added a vercel.json file with a code to fix this issue
 I had trouble flexing the nav menu on bigger screen.
 Solution: I use the dev tool to analyze the problem. I realized the nav-menu is set to display block inside the function, however, I liked how it looked. So, I left it as it is.
 
+I implemented a function when clicking outside of the menu, the menu would close, but there was a bug where clicking on the hamburger menu, it would open and close and open again.
+Solution: I added another useRef on the hamburger menu and added the logic inside the useEffect function to prevent that from happening.
+
+I had problem showing the box shadow on scroll.
+Solution:
+I checked these one by one
+
+1. I console log the useEffect to see if the state is working, but nothing showed up.
+2. I made the body to 200vh to test if the site container is more than the body and this was the problem.
+3. I set the body to 100vh height instead of 100% to see if would fix it because the site-wrapper was at 100vh height, but this wasn't the problem.
+4. I then fixed the box shadow by removing the overflow on the body so the overflow is not hidden.
+5. The bottom bar was showing after I removed the overflow, so I set the site-wrapper to 100% instead of 100vw
+
 ---
 
 What to improve on:
