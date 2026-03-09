@@ -76,7 +76,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <img src="/assets/movie_theatre.svg" className="hero-image" />
+        <img src="/assets/budget-app.png" className="hero-image" />
       </div>
       <div className="skills-container">
         <h2 className="sub-title">My Skills</h2>

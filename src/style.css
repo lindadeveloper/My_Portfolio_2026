@@ -287,6 +287,11 @@ i {
   align-items: center;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
 .hero-h1 {
   text-align: center;
   font-size: 3rem;
@@ -862,7 +867,7 @@ i {
   }
   .hero-image {
     display: block;
-    max-width: 420px;
+    max-width: 400px;
   }
 
   .hero-title {
@@ -871,7 +876,7 @@ i {
   }
 
   .skills-container {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
 
   .nav-link:hover {

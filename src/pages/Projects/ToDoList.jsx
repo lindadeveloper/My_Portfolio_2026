@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { ChevronsLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function ToDoList() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
-        <ChevronsLeft /> Back to all Projects
+        <ChevronLeft /> Back to all Projects
       </Link>
       <h1 className="project-title">To-Do List App</h1>
       <p className="p-default">

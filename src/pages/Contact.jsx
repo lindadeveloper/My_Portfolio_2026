@@ -3,7 +3,7 @@ import { MdDownload } from "react-icons/md";
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaMedium, FaYoutube } from "react-icons/fa";
 import { PiXLogo } from "react-icons/pi";
-import { ChevronsLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
@@ -21,10 +21,16 @@ export default function Contact() {
 
   return (
     <section className="content-container">
-      <Link to="../about" className="back-btn-middle">
-        <ChevronsLeft />
-        About
-      </Link>
+      <div className="breadcrumb">
+        <Link to="/" className="back-btn">
+          <ChevronLeft />
+          Home
+        </Link>
+        <Link to="../about" className="back-btn-middle">
+          <ChevronLeft />
+          About
+        </Link>
+      </div>
       <div className="contact-container">
         <div className="contact-links">
           <h1 className="contact-h1">Git in touch!</h1>

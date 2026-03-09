@@ -1,15 +1,25 @@
 import { PiCertificate } from "react-icons/pi";
 import { FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { ChevronsLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function Education() {
   return (
     <div className="education-container">
-      <Link to="../projects" className="back-btn">
-        <ChevronsLeft />
-        Projects
-      </Link>
+      <div className="breadcrumb">
+        <Link to="/" className="back-btn">
+          <ChevronLeft />
+          Home
+        </Link>
+        <Link to="../projects" className="back-btn">
+          <ChevronLeft />
+          Projects
+        </Link>
+        <Link to="../contact" className="back-btn">
+          <ChevronLeft />
+          Contact
+        </Link>
+      </div>
       <h2 className="sub-title">My Education</h2>
       <div className="edu-wrapper">
         <div className="edu-container">

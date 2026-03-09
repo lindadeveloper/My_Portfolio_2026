@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChevronsLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 // import { useState } from "react";
 
 export default function ProjectLayout() {
@@ -10,10 +10,20 @@ export default function ProjectLayout() {
 
   return (
     <section className="content-container">
-      <Link to="../contact" className="back-btn">
-        <ChevronsLeft />
-        Contact
-      </Link>
+      <div className="breadcrumb">
+        <Link to="/" className="back-btn">
+          <ChevronLeft />
+          Home
+        </Link>
+        <Link to="../Education" className="back-btn">
+          <ChevronLeft />
+          Education
+        </Link>
+        <Link to="../contact" className="back-btn">
+          <ChevronLeft />
+          Contact
+        </Link>
+      </div>
       <div className="project-container">
         <Link to="to-do-list-app" className="project-btn">
           To-Do List App
