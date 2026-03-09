@@ -6,9 +6,9 @@ import { ChevronsLeft } from "lucide-react";
 export default function Education() {
   return (
     <div className="education-container">
-      <Link to="/" className="back-btn">
+      <Link to="../projects" className="back-btn">
         <ChevronsLeft />
-        Home
+        Projects
       </Link>
       <h2 className="sub-title">My Education</h2>
       <div className="edu-wrapper">

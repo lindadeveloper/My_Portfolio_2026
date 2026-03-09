@@ -21,9 +21,9 @@ export default function Contact() {
 
   return (
     <section className="content-container">
-      <Link to="../education" className="back-btn-middle">
+      <Link to="../about" className="back-btn-middle">
         <ChevronsLeft />
-        Education
+        About
       </Link>
       <div className="contact-container">
         <div className="contact-links">

@@ -10,9 +10,9 @@ export default function ProjectLayout() {
 
   return (
     <section className="content-container">
-      <Link to="/" className="back-btn">
+      <Link to="../contact" className="back-btn">
         <ChevronsLeft />
-        Home
+        Contact
       </Link>
       <div className="project-container">
         <Link to="to-do-list-app" className="project-btn">
