@@ -10,6 +10,7 @@ import {
   Mail,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import LindaAvatar from "/assets/LindaAvatar.svg";
 // import { CiCircleChevUp } from "react-icons/ci";
 
 export default function Header() {
@@ -75,7 +76,7 @@ export default function Header() {
         <nav className="nav-menu" style={toggleMenu} ref={menuRef}>
           <ul>
             <div className="menu-logo">
-              <img src="/assets/Linda-avatar.svg" />
+              <img src={LindaAvatar} alt="Avatar Image" />
               <h1>Linda Liu</h1>
             </div>
             <div className="nav-btn">

@@ -16,6 +16,7 @@ import { Mail } from "lucide-react";
 import { MdDownload } from "react-icons/md";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
+import BudgetApp from "/assets/BudgetApp.png";
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <img src="/assets/budget-app.png" className="hero-image" />
+        <img src={BudgetApp} alt="Budget App Image" className="hero-image" />
       </div>
       <div className="skills-container">
         <h2 className="sub-title">My Skills</h2>

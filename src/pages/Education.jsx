@@ -2,6 +2,9 @@ import { PiCertificate } from "react-icons/pi";
 import { FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+import CourseraLogo from "/assets/CourseraLogo.svg";
+import ScrimbaLogo from "/assets/ScrimbaLogo.svg";
+import UdacityLogo from "/assets/UdacityLogo.svg";
 
 export default function Education() {
   return (
@@ -24,7 +27,7 @@ export default function Education() {
       <div className="edu-wrapper">
         <div className="edu-container">
           <div className="edu-logo-container">
-            <img src="/assets/Scrimba_logo.svg" className="edu-logo" />
+            <img src={ScrimbaLogo} alt="Scrimba Logo" className="edu-logo" />
             <h4 className="opaque-logo-text">Scrimba</h4>
           </div>
           <div>
@@ -65,7 +68,7 @@ export default function Education() {
       <div className="edu-wrapper">
         <div className="edu-container">
           <div className="edu-logo-container">
-            <img src="/assets/Udacity_logo.svg" className="edu-logo" />
+            <img src={UdacityLogo} alt="Udacity Logo" className="edu-logo" />
             <h4 className="opaque-logo-text">Udacity</h4>
           </div>
           <div>
@@ -106,7 +109,7 @@ export default function Education() {
       <div className="edu-wrapper">
         <div className="edu-container">
           <div className="edu-logo-container">
-            <img src="/assets/Coursera_logo.svg" className="edu-logo" />
+            <img src={CourseraLogo} alt="Coursera Logo" className="edu-logo" />
             <h4 className="opaque-logo-text">Coursera</h4>
           </div>
           <div>

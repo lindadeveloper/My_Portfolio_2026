@@ -2,6 +2,7 @@
 import { Send, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import LindaProfile from "/assets/LindaProfile.svg";
 
 export default function About() {
   const [isCopied, setIsCopied] = useState(false);
@@ -35,7 +36,7 @@ export default function About() {
             <span className="text-label">Hi!</span>
             <HiChatBubbleLeft size="6rem" className="mirror-icon" />
           </div> */}
-          <img src="/assets/Linda-profile.svg" className="profile-img" />
+          <img src={LindaProfile} alt="Profile Image" className="profile-img" />
         </div>
         <div className="about-content">
           <h1>About me</h1>
