@@ -246,8 +246,6 @@ i {
 .logo,
 .theme-btn,
 .ham-btn {
-  margin: 2rem 0;
-  padding-top: 1rem;
   display: flex;
   align-items: center;
 }
@@ -291,7 +289,7 @@ i {
 /*this gives a consistent structure to the nav bar and content section*/
 
 .nav-bar {
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -718,6 +716,7 @@ i {
 
   .hero-image {
     display: block;
+    object-fit: contain;
     max-width: 340px;
   }
   .icon-container {
@@ -739,9 +738,6 @@ i {
 
 /*responsiveness for medium screens*/
 @media (min-width: 821px) and (max-width: 1024px) {
-  .header-nav-bar {
-    padding: 1rem 0;
-  }
   .links-container-long-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -763,6 +759,7 @@ i {
   }
   .hero-image {
     display: block;
+    object-fit: contain;
     max-width: 400px;
   }
 
@@ -789,9 +786,6 @@ i {
 
 /*responsiveness for large screens*/
 @media (min-width: 1025px) {
-  .header-nav-bar {
-    padding: 1rem 0;
-  }
   .links-container-long-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -889,7 +883,8 @@ i {
   }
   .hero-image {
     display: block;
-    max-width: 400px;
+    object-fit: contain;
+    max-width: 450px;
   }
 
   .hero-title {
@@ -898,7 +893,7 @@ i {
   }
 
   .skills-container {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .nav-link:hover {
@@ -955,6 +950,7 @@ i {
   }
 
   .nav-bar {
+    padding: 3rem 2rem;
     z-index: 1000;
     max-width: 1065px;
   }
@@ -966,8 +962,8 @@ i {
   .nav-menu {
     height: fit-content;
     border-radius: 2rem;
-    margin: 10rem 37.5rem;
-    width: max-content;
+    margin: 8rem 34.6rem;
+    width: 28rem;
     box-shadow: none;
     border: 1px solid var(--side-menu-border);
   }

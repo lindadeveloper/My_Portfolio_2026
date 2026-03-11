@@ -22,10 +22,6 @@ export default function Contact() {
   return (
     <section className="content-container">
       <div className="breadcrumb">
-        <Link to="../projects" className="back-btn">
-          <ChevronLeft />
-          Projects
-        </Link>
         <Link to="../about" className="back-btn-middle">
           <ChevronLeft />
           About
