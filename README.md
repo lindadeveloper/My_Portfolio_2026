@@ -53,6 +53,12 @@ I checked these one by one
 4. I then fixed the box shadow by removing the overflow on the body so the overflow is not hidden.
 5. The bottom bar was showing after I removed the overflow, so I set the site-wrapper to 100% instead of 100vw
 
+The about page image doesn't load right away:
+Solution:
+
+1. I used the Lighthouse tool to check on the mobile device's performance. It showed the first contentful paint took 2.3 seconds to load which is very slow.
+2. Instead of lazy loading the about page, I changed it to import it normally.
+
 ---
 
 What to improve on:
