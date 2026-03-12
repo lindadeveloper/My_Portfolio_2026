@@ -32,7 +32,12 @@ export default function About() {
             <span className="text-label">Hi!</span>
             <HiChatBubbleLeft size="6rem" className="mirror-icon" />
           </div> */}
-          <img src={LindaProfile} alt="Profile Image" className="profile-img" />
+          <img
+            src={LindaProfile}
+            alt="Profile Image"
+            className="profile-img"
+            fetchpriority="high"
+          />
         </div>
         <div className="about-content">
           <h1>About me</h1>
