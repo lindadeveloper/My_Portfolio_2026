@@ -57,7 +57,8 @@ The about page image doesn't load right away:
 Solution:
 
 1. I used the Lighthouse tool to check on the mobile device's performance. It showed the first contentful paint took 2.3 seconds to load which is very slow.
-2. Instead of lazy loading the about page, I changed it to import it normally.
+2. I set the about image to fetchpriority="high", but it didn't make any difference.
+3. I saw in the Lighthouse tool that the image doesn't have a set width and heigh. So, I added width and height
 
 ---
 

@@ -314,6 +314,7 @@ i {
 
 /*this will help prevent users from clicking on the wrong area*/
 .profile-img {
+  height: 250px;
   width: 250px;
 }
 
