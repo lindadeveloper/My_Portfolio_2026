@@ -7,7 +7,7 @@ export default function AptSearch() {
       <Link to="../projects" className="back-btn">
         <ChevronLeft /> Back to all Projects
       </Link>
-      <h1 className="project-title">Apartment Search Tool</h1>
+      <h1 className="project-title">GitHub Dashboard</h1>
       <div className="live-demo-github-link-wrapper">
         <a href="" alt="Live Demo" className="live-demo-github">
           Live Demo

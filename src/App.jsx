@@ -14,7 +14,7 @@ const About = lazy(() => import("./pages/About"));
 const Education = lazy(() => import("./pages/Education"));
 const Contact = lazy(() => import("./pages/Contact"));
 const BudgetApp = lazy(() => import("./pages/Projects/BudgetApp"));
-const AptSearch = lazy(() => import("./pages/Projects/AptSearch"));
+const GithubDashboard = lazy(() => import("./pages/Projects/GithubDashboard"));
 const TaskApp = lazy(() => import("./pages/Projects/TaskApp"));
 const RealTimeChat = lazy(() => import("./pages/Projects/RealTimeChat"));
 const UXUI = lazy(() => import("./pages/Projects/UXUI"));
@@ -64,7 +64,7 @@ export default function App() {
                 <Route path="projects" element={<ProjectLayout />} />
                 <Route path="/projects/real-time-chat-app" element={<RealTimeChat />} />
                 <Route path="/projects/task-app" element={<TaskApp />} />
-                <Route path="/projects/apt-search-tool" element={<AptSearch />} />
+                <Route path="/projects/github-dashboard" element={<GithubDashboard />} />
                 <Route path="/projects/budget-app" element={<BudgetApp />} />
                 <Route path="/projects/uxui" element={<UXUI />} />
                 <Route path="about" element={<About />} />

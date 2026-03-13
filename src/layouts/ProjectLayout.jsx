@@ -55,8 +55,8 @@ export default function ProjectLayout() {
             <span className="lang-learned">API requests</span>
           </div>
         </Link>
-        <Link to="apt-search-tool" className="project-btn project-lang">
-          Apartment Search Tool
+        <Link to="github-dashboard" className="project-btn project-lang">
+          Github Dashboard
           <div className="lang-learned-wrapper">
             <span className="lang-learned">React</span>
             <span className="lang-learned">Javascript</span>
