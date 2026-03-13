@@ -45,8 +45,8 @@ export default function ProjectLayout() {
             <span className="lang-learned">API requests</span>
           </div>
         </Link>
-        <Link to="recipe-app" className="project-btn project-lang">
-          Recipe Finder
+        <Link to="Task-app" className="project-btn project-lang">
+          Kanban Task App
           <div className="lang-learned-wrapper">
             <span className="lang-learned">React</span>
             <span className="lang-learned">Javascript</span>
