@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
-export default function UXUI() {
+export default function AptSearch() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
         <ChevronLeft /> Back to all Projects
       </Link>
-      <h1 className="project-title">UX UI Projects</h1>
+      <h1 className="project-title">Real Time Chat App</h1>
       <div className="live-demo-github-link-wrapper">
         <a href="" alt="Live Demo" className="live-demo-github">
           Live Demo
@@ -17,7 +17,7 @@ export default function UXUI() {
           GitHub
         </a>
         <span>|</span>
-        <p>Short description</p>
+        <p>Chat with an Ai Assistant</p>
       </div>
       <p className="p-default project-p">
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae

@@ -16,6 +16,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const BudgetApp = lazy(() => import("./pages/Projects/BudgetApp"));
 const AptSearch = lazy(() => import("./pages/Projects/AptSearch"));
 const RecipeApp = lazy(() => import("./pages/Projects/RecipeApp"));
+const RealTimeChat = lazy(() => import("./pages/Projects/RealTimeChat"));
 const UXUI = lazy(() => import("./pages/Projects/UXUI"));
 
 export default function App() {
@@ -61,6 +62,7 @@ export default function App() {
                 <Route index element={<Home />} />
 
                 <Route path="projects" element={<ProjectLayout />} />
+                <Route path="/projects/real-time-chat-app" element={<RealTimeChat />} />
                 <Route path="/projects/recipe-app" element={<RecipeApp />} />
                 <Route path="/projects/apt-search-tool" element={<AptSearch />} />
                 <Route path="/projects/budget-app" element={<BudgetApp />} />
