@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
-export default function AptSearch() {
+export default function RealTimeChat() {
   return (
     <div className="content-container">
       <Link to="../projects" className="back-btn">
