@@ -17,15 +17,15 @@ export default function TaskApp() {
           GitHub
         </a>
         <span>|</span>
-        <p>Short description</p>
+        <p>A task app to help organize your workflow</p>
       </div>
       <ul className="p-default project-p">
+        <h2>Coming soon!...</h2>
         <li>✔ Drag tasks between columns</li>
         <li>✔ Reorder tasks in column</li>
         <li>✔ Task detail modal</li>
         <li>✔ Data persistence (backend or localStorage)</li>
         <li>✔ Responsive UI</li>
-
         <li>✔ Multiple boards</li>
         <li>✔ Search/filter</li>
         <li>✔ Authentication</li>
