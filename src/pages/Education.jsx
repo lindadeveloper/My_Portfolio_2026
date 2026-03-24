@@ -24,6 +24,50 @@ export default function Education() {
         </Link>
       </div>
       <h2 className="sub-title">My Education</h2>
+
+      <div className="edu-wrapper">
+        <div className="edu-container">
+          <div className="edu-logo-container">
+            <img src={ScrimbaLogo} alt="Scrimba Logo" className="edu-logo" />
+            <h4 className="opaque-logo-text">Scrimba</h4>
+          </div>
+          <div>
+            <h3>Full Stack Developer Path 2026~Ongoing</h3>
+            <p className="opaque-text">
+              Built full-stack applications by creating REST APIs with Node.js/Express and managing
+              data with MongoDB and integrating front-end interfaces with backend services.
+              Integrated AI features into applications using LLM APIs, prompt engineering, and
+              modern AI workflows.
+            </p>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">React</span>
+              <span className="lang-learned">Javascript</span>
+              <span className="lang-learned">HTML/CSS</span>
+              <span className="lang-learned">Next.js</span>
+              <span className="lang-learned">Node.js</span>
+              <span className="lang-learned">Express</span>
+              <span className="lang-learned">SQL</span>
+              <span className="lang-learned">JSON</span>
+              <span className="lang-learned">TypeScript</span>
+              <span className="lang-learned">REST/API</span>
+              <span className="lang-learned">Authentication</span>
+              <span className="lang-learned">Ai Engineering</span>
+              <span className="lang-learned">RAG & Agents</span>
+              <span className="lang-learned">Deployment</span>
+              <span className="lang-learned">Best Practices</span>
+            </div>
+          </div>
+        </div>
+        <div className="certificate-globe-wrapper">
+          <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="certificate-btn">
+            <PiCertificate size={30} />
+          </a>
+          <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="globe-icon">
+            <FaGlobe size={20} />
+          </a>
+        </div>
+      </div>
+
       <div className="edu-wrapper">
         <div className="edu-container">
           <div className="edu-logo-container">

@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <section className="content-container">
       <div className="breadcrumb">
-        <Link to="../about" className="back-btn-middle">
+        <Link to="../about" className="back-btn">
           <ChevronLeft />
           About
         </Link>

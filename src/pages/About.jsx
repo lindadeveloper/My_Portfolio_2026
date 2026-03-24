@@ -20,7 +20,11 @@ export default function About() {
   return (
     <section className="content-container">
       <div className="breadcrumb">
-        <Link to="../contact" className="back-btn-middle">
+        <Link to="/" className="back-btn">
+          <ChevronLeft />
+          Home
+        </Link>
+        <Link to="../contact" className="back-btn">
           <ChevronLeft />
           Contact
         </Link>
