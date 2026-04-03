@@ -17,7 +17,7 @@ export default function RealTimeChat() {
           GitHub
         </a>
         <span>|</span>
-        <p>Chat with an Ai assistant</p>
+        <p>Chat with an Ai Travel Planner</p>
       </div>
       <p className="p-default project-p">Coming Soon!...</p>
     </div>

@@ -65,8 +65,9 @@ export default function Home() {
           </div>
           <p className="p1-home">
             I'm a <span className="em-text">Front-End Developer</span> who builds responsive, and
-            user-centered interfaces that are intuitive, accessible and effective. I also have
-            experience in e-commerce and a strong eye for design.
+            user-centered interfaces that are intuitive, accessible and effective. I focus on
+            writing clean and maintainable code, designing scalable systems, and creating digital
+            experiences that are both intuitive and effective.
           </p>
           <div className="hero-btn-container">
             <Link to="about" className="hero-btn-about">

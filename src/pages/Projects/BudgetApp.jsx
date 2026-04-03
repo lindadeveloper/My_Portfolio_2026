@@ -19,7 +19,7 @@ export default function BudgetApp() {
         <span>|</span>
         <p>A budget app to track all your expenses</p>
       </div>
-      <p className="p-default project-p">Comming Soon!...</p>
+      <p className="p-default project-p">Currently work in progress...</p>
     </div>
   );
 }

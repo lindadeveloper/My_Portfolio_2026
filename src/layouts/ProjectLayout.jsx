@@ -25,8 +25,8 @@ export default function ProjectLayout() {
         </Link>
       </div>
       <div className="project-container">
-        <Link to="real-time-chat-app" className="project-btn project-lang">
-          Real Time Chat App
+        <Link to="budget-app" className="project-btn project-lang">
+          Budget App
           <div className="lang-learned-wrapper">
             <span className="lang-learned">React</span>
             <span className="lang-learned">Javascript</span>
@@ -35,8 +35,8 @@ export default function ProjectLayout() {
             <span className="lang-learned">API requests</span>
           </div>
         </Link>
-        <Link to="budget-app" className="project-btn project-lang">
-          Budget App
+        <Link to="real-time-chat-app" className="project-btn project-lang">
+          Real Time Chat App
           <div className="lang-learned-wrapper">
             <span className="lang-learned">React</span>
             <span className="lang-learned">Javascript</span>
