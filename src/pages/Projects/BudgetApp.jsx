@@ -9,15 +9,15 @@ export default function BudgetApp() {
       </Link>
       <h1 className="project-title">Budget App</h1>
       <div className="live-demo-github-link-wrapper">
-        <a href="" alt="Live Demo" className="live-demo-github">
+        <a
+          href="https://budget-app-beta-lemon.vercel.app/"
+          alt="Live Demo"
+          className="live-demo-github"
+        >
           Live Demo
         </a>
         <span>|</span>
-        <a
-          href="https://budget-app-beta-lemon.vercel.app/"
-          alt="GitHub Link"
-          className="live-demo-github"
-        >
+        <a href="" alt="GitHub Link" className="live-demo-github">
           GitHub
         </a>
         <span>|</span>
