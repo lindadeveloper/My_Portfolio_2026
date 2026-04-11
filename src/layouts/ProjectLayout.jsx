@@ -32,7 +32,7 @@ export default function ProjectLayout() {
             <span className="lang-learned">Javascript</span>
             <span className="lang-learned">HTML</span>
             <span className="lang-learned">CSS</span>
-            <span className="lang-learned">API requests</span>
+            <span className="lang-learned">Mock Data</span>
           </div>
         </Link>
         <Link to="real-time-chat-app" className="project-btn project-lang">
@@ -65,7 +65,7 @@ export default function ProjectLayout() {
             <span className="lang-learned">API requests</span>
           </div>
         </Link>
-        <Link to="uxui" className="project-btn project-lang">
+        {/* <Link to="uxui" className="project-btn project-lang">
           UX UI projects
           <div className="lang-learned-wrapper">
             <span className="lang-learned">Figma (Design Software)</span>
@@ -76,7 +76,7 @@ export default function ProjectLayout() {
             <span className="lang-learned">Mobile Development</span>
             <span className="lang-learned">Responsive Web Design</span>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
