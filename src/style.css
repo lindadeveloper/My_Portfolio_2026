@@ -858,7 +858,7 @@ i {
   }
 
   .budgetBackground-img:hover {
-    background: linear-gradient(var(--project-bg)), url("../public/assets/budgetingAppImg.JPG");
+    background: linear-gradient(var(--project-bg)), url("/budgetingAppImg.jpg");
   }
 
   .home,
