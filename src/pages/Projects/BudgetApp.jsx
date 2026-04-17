@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+import budgetingAppImg from "../../../public/assets/budgetingAppImg.jpg";
 
 export default function BudgetApp() {
   return (
@@ -29,7 +30,7 @@ export default function BudgetApp() {
         only HTML, CSS, and JavaScript. This project is still a work in progress.
       </p>
       <a href="https://budget-app-beta-lemon.vercel.app/" alt="Live Demo">
-        <img src="../../public/assets/budgetingAppImg.jpg" className="preview-img" />
+        <img src={budgetingAppImg} className="preview-img" />
       </a>
     </div>
   );
