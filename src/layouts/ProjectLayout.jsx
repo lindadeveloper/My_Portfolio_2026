@@ -26,8 +26,8 @@ export default function ProjectLayout() {
       </div>
       <div className="project-container">
         <Link to="budget-app" className="project-btn project-lang">
-          <div className="budgetBtn-background">
-            Budget App
+          <div className="project-background budgetBackground-img">
+            <h2 className="project-title">Budget App</h2>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">React</span>
               <span className="lang-learned">Javascript</span>
@@ -38,33 +38,39 @@ export default function ProjectLayout() {
           </div>
         </Link>
         <Link to="real-time-chat-app" className="project-btn project-lang">
-          Real Time Chat App
-          <div className="lang-learned-wrapper">
-            <span className="lang-learned">React</span>
-            <span className="lang-learned">Javascript</span>
-            <span className="lang-learned">HTML</span>
-            <span className="lang-learned">CSS</span>
-            <span className="lang-learned">API requests</span>
+          <div className="project-background">
+            <h2 className="project-title">Real Time Chat App</h2>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">React</span>
+              <span className="lang-learned">Javascript</span>
+              <span className="lang-learned">HTML</span>
+              <span className="lang-learned">CSS</span>
+              <span className="lang-learned">API requests</span>
+            </div>
           </div>
         </Link>
         <Link to="Task-app" className="project-btn project-lang">
-          Kanban Task App
-          <div className="lang-learned-wrapper">
-            <span className="lang-learned">React</span>
-            <span className="lang-learned">Javascript</span>
-            <span className="lang-learned">HTML</span>
-            <span className="lang-learned">CSS</span>
-            <span className="lang-learned">API requests</span>
+          <div className="project-background">
+            <h2 className="project-title">Kanban Task App</h2>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">React</span>
+              <span className="lang-learned">Javascript</span>
+              <span className="lang-learned">HTML</span>
+              <span className="lang-learned">CSS</span>
+              <span className="lang-learned">API requests</span>
+            </div>
           </div>
         </Link>
         <Link to="github-dashboard" className="project-btn project-lang">
-          Github Dashboard
-          <div className="lang-learned-wrapper">
-            <span className="lang-learned">React</span>
-            <span className="lang-learned">Javascript</span>
-            <span className="lang-learned">HTML</span>
-            <span className="lang-learned">CSS</span>
-            <span className="lang-learned">API requests</span>
+          <div className="project-background">
+            <h2 className="project-title">Github Dashboard</h2>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">React</span>
+              <span className="lang-learned">Javascript</span>
+              <span className="lang-learned">HTML</span>
+              <span className="lang-learned">CSS</span>
+              <span className="lang-learned">API requests</span>
+            </div>
           </div>
         </Link>
         {/* <Link to="uxui" className="project-btn project-lang">

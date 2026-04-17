@@ -13,6 +13,10 @@
   color-scheme: light;
   --main-bg-color: #fafafa;
   --main-text-color: #222222;
+  --project-title: #1a1b22;
+  --project-bg: rgba(219, 231, 240, 0.9);
+  --lang-text-color: #fafafa;
+  --lang-bg-color: #4c7394;
   --scroll-arrow-color: #4c7394;
   --scroll-arrow-hover: #222222;
   --project-border: #b2c0d4;
@@ -59,6 +63,10 @@
   color-scheme: dark;
   --main-bg-color: #1a1b22;
   --main-text-color: #fafafa;
+  --project-title: #fafafa;
+  --project-bg: rgb(34, 52, 68, 0.9);
+  --lang-text-color: #fafafa;
+  --lang-bg-color: #1a1b22;
   --scroll-arrow-color: #658fb4;
   --scroll-arrow-hover: #fafafa;
   --project-border: #2a3242;
@@ -78,7 +86,7 @@
   --side-menu-shadow: #658fb4;
   --footer-text-color: #7899b6;
   --footer-text-link: #71a3ff;
-  --live-demo-github-link: #4376d4;
+  --live-demo-github-link: #6fa2ff;
   --hero-btn-text: #fafafa;
   --hero-btn-about-text: #fafafa;
   --hero-btn-about-border: #658fb4;
@@ -210,7 +218,7 @@ i {
   color: var(--sub-title-color);
 }
 
-.live-demo-github {
+.link {
   text-underline-offset: 0.2rem;
   color: var(--live-demo-github-link);
 }
@@ -363,6 +371,11 @@ i {
   text-align: center;
 }
 
+.project-title {
+  color: var(--project-title);
+  font-size: 2rem;
+}
+
 .project-container {
   margin-top: 2rem;
 }
@@ -372,23 +385,24 @@ i {
   border: 1px solid var(--project-border);
   color: var(--toggle-theme-btn-text);
   border-radius: 1rem;
-  padding: 1.5rem 1.5rem;
   margin-bottom: 2rem;
   width: 100%;
-  height: 12rem;
   text-decoration: none;
 }
 
-.budgetBtn-background {
-  background:
-    linear-gradient(rgba(220, 243, 240, 1), rgba(255, 255, 255, 0.9)),
-    url("../../public/assets/budgetingAppImg.jpg");
+.project-background {
+  padding: 1.5rem 1.5rem;
+  background: linear-gradient(var(--project-bg));
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   height: 100%;
+  border-radius: 1rem;
+}
+
+.preview-img {
+  margin: 2rem 0;
   border-radius: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .profile-img,
@@ -503,6 +517,8 @@ i {
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   margin: 0.5rem 0.5rem 0 0;
+  background-color: var(--lang-bg-color);
+  color: var(--lang-text-color);
 }
 
 .project-lang {
@@ -828,7 +844,8 @@ i {
   .project-btn,
   .email-btn:hover,
   /* .back-to-top-arrow:hover, */
-  .certificate-btn {
+  .certificate-btn,
+  .preview-img {
     cursor: pointer;
   }
 
@@ -838,6 +855,10 @@ i {
   .education:hover,
   .contact:hover {
     background-color: var(--side-menu-bg-color-hover);
+  }
+
+  .budgetBackground-img:hover {
+    background: linear-gradient(var(--project-bg)), url("../../public/assets/budgetingAppImg.jpg");
   }
 
   .home,
