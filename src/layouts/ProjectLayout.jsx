@@ -26,13 +26,15 @@ export default function ProjectLayout() {
       </div>
       <div className="project-container">
         <Link to="budget-app" className="project-btn project-lang">
-          Budget App
-          <div className="lang-learned-wrapper">
-            <span className="lang-learned">React</span>
-            <span className="lang-learned">Javascript</span>
-            <span className="lang-learned">HTML</span>
-            <span className="lang-learned">CSS</span>
-            <span className="lang-learned">Mock Data</span>
+          <div className="budgetBtn-background">
+            Budget App
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">React</span>
+              <span className="lang-learned">Javascript</span>
+              <span className="lang-learned">HTML</span>
+              <span className="lang-learned">CSS</span>
+              <span className="lang-learned">Mock Data</span>
+            </div>
           </div>
         </Link>
         <Link to="real-time-chat-app" className="project-btn project-lang">

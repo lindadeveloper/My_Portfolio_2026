@@ -17,11 +17,17 @@ export default function BudgetApp() {
           Live Demo
         </a>
         <span>|</span>
-        <a href="" alt="GitHub Link" className="live-demo-github">
+        <a
+          href="https://github.com/lindadeveloper/Budget_App"
+          alt="GitHub Link"
+          className="live-demo-github"
+        >
           GitHub
         </a>
         <span>|</span>
         <p>A budget app to track all your expenses</p>
+        <span>|</span>
+        <p>Team Size: 1 (solo)</p>
       </div>
       <p className="p-default project-p">
         I designed and developed this budget app with a focus on intuitive UX/UI and user-friendly

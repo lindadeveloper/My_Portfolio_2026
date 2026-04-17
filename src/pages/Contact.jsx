@@ -72,7 +72,7 @@ export default function Contact() {
             </div>
           </a>
 
-          <a href="https://x.com/LindaDeveloper" className="links-container" target="_blank">
+          {/* <a href="https://x.com/LindaDeveloper" className="links-container" target="_blank">
             <p className="key-text">
               <PiXLogo size={20} className="value-icon" title="X twitter" />
               Twitter
@@ -104,7 +104,7 @@ export default function Contact() {
             <div className="value-wrap">
               <p className="value-text">@LindaDeveloper</p>
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
