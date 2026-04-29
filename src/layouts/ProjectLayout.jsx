@@ -37,7 +37,7 @@ export default function ProjectLayout() {
             </div>
           </div>
         </Link>
-        <Link to="real-time-chat-app" className="project-btn project-lang">
+        {/* <Link to="real-time-chat-app" className="project-btn project-lang">
           <div className="project-background">
             <h2 className="project-title">Real Time Chat App</h2>
             <div className="lang-learned-wrapper">
@@ -60,10 +60,10 @@ export default function ProjectLayout() {
               <span className="lang-learned">API requests</span>
             </div>
           </div>
-        </Link>
-        <Link to="github-dashboard" className="project-btn project-lang">
+        </Link> */}
+        <Link to="crypto-dashboard" className="project-btn project-lang">
           <div className="project-background">
-            <h2 className="project-title">Github Dashboard</h2>
+            <h2 className="project-title">Crypto Dashboard</h2>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">React</span>
               <span className="lang-learned">Javascript</span>

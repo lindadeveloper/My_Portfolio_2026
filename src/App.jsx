@@ -14,10 +14,10 @@ const About = lazy(() => import("./pages/About"));
 const Education = lazy(() => import("./pages/Education"));
 const Contact = lazy(() => import("./pages/Contact"));
 const BudgetApp = lazy(() => import("./pages/Projects/BudgetApp"));
-const GithubDashboard = lazy(() => import("./pages/Projects/GithubDashboard"));
-const TaskApp = lazy(() => import("./pages/Projects/TaskApp"));
-const RealTimeChat = lazy(() => import("./pages/Projects/RealTimeChat"));
-const UXUI = lazy(() => import("./pages/Projects/UXUI"));
+const CryptoDashboard = lazy(() => import("./pages/Projects/CryptoDashboard"));
+// const TaskApp = lazy(() => import("./pages/Projects/TaskApp"));
+// const RealTimeChat = lazy(() => import("./pages/Projects/RealTimeChat"));
+// const UXUI = lazy(() => import("./pages/Projects/UXUI"));
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -62,11 +62,11 @@ export default function App() {
                 <Route index element={<Home />} />
 
                 <Route path="projects" element={<ProjectLayout />} />
-                <Route path="/projects/real-time-chat-app" element={<RealTimeChat />} />
-                <Route path="/projects/task-app" element={<TaskApp />} />
-                <Route path="/projects/github-dashboard" element={<GithubDashboard />} />
+                {/* <Route path="/projects/real-time-chat-app" element={<RealTimeChat />} />
+                <Route path="/projects/task-app" element={<TaskApp />} /> */}
+                <Route path="/projects/crypto-dashboard" element={<CryptoDashboard />} />
                 <Route path="/projects/budget-app" element={<BudgetApp />} />
-                <Route path="/projects/uxui" element={<UXUI />} />
+                {/* <Route path="/projects/uxui" element={<UXUI />} /> */}
                 <Route path="about" element={<About />} />
                 <Route path="education" element={<Education />} />
                 <Route path="contact" element={<Contact />} />
