@@ -69,9 +69,6 @@ export default function Home() {
             writing clean and maintainable code, designing scalable systems, and creating digital
             experiences that are both intuitive and effective.
           </p>
-          <p>
-            <b>Current promo:</b> Free static website (up to 5 pages) for the first 3 clients.
-          </p>
           <div className="hero-btn-container">
             <Link to="about" className="hero-btn-about">
               About me
