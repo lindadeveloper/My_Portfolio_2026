@@ -16,6 +16,7 @@ import { Mail } from "lucide-react";
 import { MdDownload } from "react-icons/md";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
+import { FaWebflow } from "react-icons/fa6";
 import BudgetApp from "/assets/BudgetApp.png";
 
 export default function Home() {
@@ -101,10 +102,10 @@ export default function Home() {
               <FaReact className="stack-icons" />
               <span>React</span>
             </i>
-            <i className="icon-btn">
+            {/* <i className="icon-btn">
               <FaNodeJs className="stack-icons" />
               <span>Node.js</span>
-            </i>
+            </i> */}
             <i className="icon-btn">
               <FaPython className="stack-icons" />
               <span>Python</span>
@@ -138,6 +139,10 @@ export default function Home() {
             <i className="icon-btn">
               <DiIllustrator className="stack-icons" />
               <span>Illustrator</span>
+            </i>
+            <i className="icon-btn">
+              <FaWebflow className="stack-icons" />
+              <span>Webflow</span>
             </i>
           </div>
         </div>
