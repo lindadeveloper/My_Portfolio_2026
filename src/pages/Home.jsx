@@ -18,6 +18,7 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
 import { FaWebflow } from "react-icons/fa6";
 import BudgetApp from "/assets/BudgetApp.png";
+import Linda2026 from "../../public/assets/Linda2026.pdf";
 
 export default function Home() {
   return (
@@ -45,13 +46,7 @@ export default function Home() {
               >
                 <FaGithub size={24} />
               </a>
-              <a
-                href=""
-                alt="download"
-                target="_blank"
-                title="Download resumé"
-                className="link-icon"
-              >
+              <a href={Linda2026} alt="download" title="Download resumé" className="link-icon">
                 <MdDownload size={24} />
               </a>
               <a

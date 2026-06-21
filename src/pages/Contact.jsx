@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaMedium, FaYoutube } from "react-icons/fa";
 import { PiXLogo } from "react-icons/pi";
 import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import Linda2026 from "../../public/assets/Linda2026.pdf";
 
 export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
@@ -40,7 +41,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <a href="" className="links-container" target="_blank">
+          <a href={Linda2026} className="links-container">
             <p className="key-text">My Resumé</p>
             <div className="value-wrap">
               <p className="value-text">Download Resumé</p>

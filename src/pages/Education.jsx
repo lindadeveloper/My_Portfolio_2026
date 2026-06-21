@@ -26,14 +26,14 @@ export default function Education() {
       </div>
       <h2 className="sub-title">My Education</h2>
 
-      {/* <div className="edu-wrapper">
+      <div className="edu-wrapper">
         <div className="edu-container">
           <div className="edu-logo-container">
             <img src={ScrimbaLogo} alt="Scrimba Logo" className="edu-logo" />
             <h4 className="opaque-logo-text">Scrimba</h4>
           </div>
           <div>
-            <h3>Full Stack Developer Path 2026~Ongoing</h3>
+            <h3>Full Stack Developer Path (In Progress - Expected Summer 2026)</h3>
             <p className="opaque-text">
               Built full-stack applications by creating REST APIs with Node.js/Express and managing
               data with MongoDB and integrating front-end interfaces with backend services.
@@ -64,48 +64,6 @@ export default function Education() {
             <PiCertificate size={30} />
           </a>
           <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="globe-icon">
-            <FaGlobe size={20} />
-          </a>
-        </div>
-      </div> */}
-
-      <div className="edu-wrapper">
-        <div className="edu-container">
-          <div className="edu-logo-container">
-            <img src={WGULogo} alt="WGU Logo" className="edu-logo" />
-            <h4 className="opaque-logo-text">Western Governors University</h4>
-          </div>
-          <div>
-            <h3>Bachelor of Science in Computer Science 2026~Ongoing</h3>
-            <p className="opaque-text">
-              Learning programming such as Java, C++, data structures, and algorithms, along with
-              core concepts in systems, databases, and software engineering. It also includes math
-              foundations and exposure to AI and networking, combining theory and practical skills
-              for software development careers.
-            </p>
-            <div className="lang-learned-wrapper">
-              <span className="lang-learned">Algorithms</span>
-              <span className="lang-learned">Data Structures</span>
-              <span className="lang-learned">API</span>
-              <span className="lang-learned">C++</span>
-              <span className="lang-learned">Java</span>
-              <span className="lang-learned">SQL</span>
-              <span className="lang-learned">Git</span>
-              <span className="lang-learned">Services & Databases</span>
-              <span className="lang-learned">Computer Architecture</span>
-              <span className="lang-learned">Linux</span>
-              <span className="lang-learned">Ai & Machine Learning</span>
-              <span className="lang-learned">Math & Calculus</span>
-              <span className="lang-learned">Networking & Security</span>
-              <span className="lang-learned">Agile & Scrum</span>
-            </div>
-          </div>
-        </div>
-        <div className="certificate-globe-wrapper">
-          <a href="https://www.wgu.edu/" target="_blank" className="certificate-btn">
-            <PiCertificate size={30} />
-          </a>
-          <a href="https://www.wgu.edu/" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
@@ -233,6 +191,48 @@ export default function Education() {
             <PiCertificate size={30} />
           </a>
           <a href="https://www.coursera.org/" target="_blank" className="globe-icon">
+            <FaGlobe size={20} />
+          </a>
+        </div>
+      </div>
+
+      <div className="edu-wrapper">
+        <div className="edu-container">
+          <div className="edu-logo-container">
+            <img src={WGULogo} alt="WGU Logo" className="edu-logo" />
+            <h4 className="opaque-logo-text">Western Governors University</h4>
+          </div>
+          <div>
+            <h3>Bachelor of Science in Computer Science (Starting 2027)</h3>
+            <p className="opaque-text">
+              Learning programming such as Java, C++, data structures, and algorithms, along with
+              core concepts in systems, databases, and software engineering. It also includes math
+              foundations and exposure to AI and networking, combining theory and practical skills
+              for software development careers.
+            </p>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">Algorithms</span>
+              <span className="lang-learned">Data Structures</span>
+              <span className="lang-learned">API</span>
+              <span className="lang-learned">C++</span>
+              <span className="lang-learned">Java</span>
+              <span className="lang-learned">SQL</span>
+              <span className="lang-learned">Git</span>
+              <span className="lang-learned">Services & Databases</span>
+              <span className="lang-learned">Computer Architecture</span>
+              <span className="lang-learned">Linux</span>
+              <span className="lang-learned">Ai & Machine Learning</span>
+              <span className="lang-learned">Math & Calculus</span>
+              <span className="lang-learned">Networking & Security</span>
+              <span className="lang-learned">Agile & Scrum</span>
+            </div>
+          </div>
+        </div>
+        <div className="certificate-globe-wrapper">
+          <a href="https://www.wgu.edu/" target="_blank" className="certificate-btn">
+            <PiCertificate size={30} />
+          </a>
+          <a href="https://www.wgu.edu/" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
