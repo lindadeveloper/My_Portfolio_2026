@@ -61,6 +61,21 @@ export default function ProjectLayout() {
             </div>
           </div>
         </Link> */}
+        <Link to="uxui" className="project-btn project-lang">
+          <div className="project-background foodAppBackground-img">
+            <h2 className="project-title">Food Truck App</h2>
+            <div className="lang-learned-wrapper">
+              <span className="lang-learned">Figma</span>
+              <span className="lang-learned">UX/UI</span>
+              <span className="lang-learned">Usability Testing</span>
+              <span className="lang-learned">Iterating</span>
+              <span className="lang-learned">User Flow</span>
+              <span className="lang-learned">Wireframing</span>
+              <span className="lang-learned">Mockups</span>
+              <span className="lang-learned">Prototype</span>
+            </div>
+          </div>
+        </Link>
         <Link to="crypto-dashboard" className="project-btn project-lang">
           <div className="project-background">
             <h2 className="project-title">Crypto Dashboard</h2>
@@ -73,18 +88,6 @@ export default function ProjectLayout() {
             </div>
           </div>
         </Link>
-        {/* <Link to="uxui" className="project-btn project-lang">
-          UX UI projects
-          <div className="lang-learned-wrapper">
-            <span className="lang-learned">Figma (Design Software)</span>
-            <span className="lang-learned">UX/UI Research</span>
-            <span className="lang-learned">User Testing</span>
-            <span className="lang-learned">Persona (User Experience)</span>
-            <span className="lang-learned">Storyboarding</span>
-            <span className="lang-learned">Mobile Development</span>
-            <span className="lang-learned">Responsive Web Design</span>
-          </div>
-        </Link> */}
       </div>
     </section>
   );

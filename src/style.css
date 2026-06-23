@@ -367,6 +367,11 @@ i {
   margin: 1rem 0;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-h1 {
   text-align: center;
 }
@@ -398,6 +403,7 @@ i {
   border-radius: 1rem;
 }
 
+.project-img,
 .preview-img {
   margin: 2rem 0;
   border-radius: 10px;
@@ -859,6 +865,10 @@ i {
 
   .budgetBackground-img:hover {
     background: linear-gradient(var(--project-bg)), url("/budgetingAppImg.jpg");
+  }
+
+  .foodAppBackground-img:hover {
+    background: linear-gradient(var(--project-bg)), url("/foodTruckAppImg.jpg");
   }
 
   .home,

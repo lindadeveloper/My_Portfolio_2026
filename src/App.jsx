@@ -17,7 +17,7 @@ const BudgetApp = lazy(() => import("./pages/Projects/BudgetApp"));
 const CryptoDashboard = lazy(() => import("./pages/Projects/CryptoDashboard"));
 // const TaskApp = lazy(() => import("./pages/Projects/TaskApp"));
 // const RealTimeChat = lazy(() => import("./pages/Projects/RealTimeChat"));
-// const UXUI = lazy(() => import("./pages/Projects/UXUI"));
+const UXUI = lazy(() => import("./pages/Projects/UXUI"));
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useLocalStorage("darkTheme", false);
@@ -66,7 +66,7 @@ export default function App() {
                 <Route path="/projects/task-app" element={<TaskApp />} /> */}
                 <Route path="/projects/crypto-dashboard" element={<CryptoDashboard />} />
                 <Route path="/projects/budget-app" element={<BudgetApp />} />
-                {/* <Route path="/projects/uxui" element={<UXUI />} /> */}
+                <Route path="/projects/uxui" element={<UXUI />} />
                 <Route path="about" element={<About />} />
                 <Route path="education" element={<Education />} />
                 <Route path="contact" element={<Contact />} />
