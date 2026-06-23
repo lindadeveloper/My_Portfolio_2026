@@ -10,7 +10,7 @@ export default function UXUI() {
       <h1 className="project-title">UX UI Project</h1>
       <div className="live-demo-github-link-wrapper">
         <a
-          href="https://www.figma.com/proto/dirvgxn0yRF87rPOnLHlar/Mobile-App-Project1-by-Linda?node-id=406-7663&p=f&t=B5apDzB8wuH4lyf9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&starting-point-node-id=406%3A7663"
+          href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
           alt="Live Demo"
           className="live-demo-github"
         >
@@ -32,7 +32,7 @@ export default function UXUI() {
         experience.
       </p>
       <a
-        href="https://www.figma.com/proto/dirvgxn0yRF87rPOnLHlar/Mobile-App-Project1-by-Linda?node-id=406-7663&p=f&t=B5apDzB8wuH4lyf9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&starting-point-node-id=406%3A7663"
+        href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
         alt="Live Demo"
       >
         <img src="/foodTruckAppImg.jpg" className="preview-img" />
@@ -73,7 +73,7 @@ export default function UXUI() {
         className="project-img"
       />
       <a
-        href="https://www.figma.com/proto/dirvgxn0yRF87rPOnLHlar/Mobile-App-Project1-by-Linda?node-id=406-7663&p=f&t=B5apDzB8wuH4lyf9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&starting-point-node-id=406%3A7663"
+        href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
         alt="Live Demo"
         className="centered"
       >
