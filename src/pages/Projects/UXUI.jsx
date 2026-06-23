@@ -14,7 +14,7 @@ export default function UXUI() {
           alt="Live Demo"
           className="live-demo-github"
         >
-          Live Demo
+          Interactive Prototype
         </a>
         <span>|</span>
         <span>Figma</span>
@@ -40,13 +40,25 @@ export default function UXUI() {
       <img src="/assets/TheProcess.jpg" alt="The Process" className="project-img" />
       <h2>Existing App Research</h2>
       <p className="p-default project-p">There were many pain points within the existing app.</p>
-      <img src="/assets/PainPoints.jpg" alt="Pain Points" className="project-img" />
+      <a href="/assets/PainPoints.jpg" target="_blank">
+        <img src="/assets/PainPoints.jpg" alt="Pain Points" className="project-img" />
+      </a>
       <h2>User Flow Diagram</h2>
-      <img src="/assets/UserFlow.jpg" alt="User Flow" className="project-img" />
+      <a href="/assets/UserFlow.jpg" target="_blank">
+        <img src="/assets/UserFlow.jpg" alt="User Flow" className="project-img" />
+      </a>
       <h2>Low-Fidelity Wireframe & User Flow</h2>
-      <img src="/assets/PrimaryUserFlow.png" alt="Low-Fidelity Prototype" className="project-img" />
+      <a href="/assets/PrimaryUserFlow.png" target="_blank">
+        <img
+          src="/assets/PrimaryUserFlow.png"
+          alt="Low-Fidelity Prototype"
+          className="project-img"
+        />
+      </a>
       <h2>Mockup with New Improvements</h2>
-      <img src="/assets/HiFiUserFlow.jpg" alt="Hi-Fidelity Prototype" className="project-img" />
+      <a href="/assets/HiFiUserFlow.jpg" target="_blank">
+        <img src="/assets/HiFiUserFlow.jpg" alt="Hi-Fidelity Prototype" className="project-img" />
+      </a>
       <h2>First Usability Study</h2>
       <p className="p-default project-p">
         During the wireframe design process, I created a contact list page that allowed users to
@@ -55,11 +67,13 @@ export default function UXUI() {
         result, I revised the design by seamlessly integrating the contact list into the same page
         as the menu, making the group ordering process more intuitive and efficient.
       </p>
-      <img
-        src="/assets/BeforeAfterUsabilityContactList.jpg"
-        alt="First Usability Testing on Contact List"
-        className="project-img"
-      />
+      <a href="/assets/BeforeAfterUsabilityContactList.png" target="_blank">
+        <img
+          src="/assets/BeforeAfterUsabilityContactList.png"
+          alt="First Usability Testing on Contact List"
+          className="project-img"
+        />
+      </a>
       <h2>Second Usability Study</h2>
       <p className="p-default project-p">
         After conducting a second usability study, I replaced the "Hide" button with an "X" button
@@ -68,11 +82,13 @@ export default function UXUI() {
         menu-sharing button from "Invite" to "Share" to reduce confusion and better reflect its
         function.
       </p>
-      <img
-        src="/assets/BeforeAfterUsabilityInterface.jpg"
-        alt="Second Usability Testing on Contact List"
-        className="project-img"
-      />
+      <a href="/assets/BeforeAfterUsabilityInterface.png" target="_blank">
+        <img
+          src="/assets/BeforeAfterUsabilityInterface.png"
+          alt="Second Usability Testing on Contact List"
+          className="project-img"
+        />
+      </a>
       <a
         href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
         alt="Live Demo"
