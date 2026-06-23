@@ -41,10 +41,11 @@ export default function UXUI() {
       <h2>Existing App Research</h2>
       <p className="p-default project-p">There were many pain points within the existing app.</p>
       <img src="/assets/PainPoints.jpg" alt="Pain Points" className="project-img" />
-      <h2>Prototypes</h2>
-      <p className="p-default project-p">User Flow Diagram & Prototypes</p>
+      <h2>User Flow Diagram</h2>
       <img src="/assets/UserFlow.jpg" alt="User Flow" className="project-img" />
+      <h2>Low-Fidelity Wireframe & User Flow</h2>
       <img src="/assets/PrimaryUserFlow.png" alt="Low-Fidelity Prototype" className="project-img" />
+      <h2>Mockup with New Improvements</h2>
       <img src="/assets/HiFiUserFlow.jpg" alt="Hi-Fidelity Prototype" className="project-img" />
       <h2>First Usability Study</h2>
       <p className="p-default project-p">
