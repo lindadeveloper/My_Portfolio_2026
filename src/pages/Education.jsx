@@ -203,7 +203,7 @@ export default function Education() {
             <h4 className="opaque-logo-text">Western Governors University</h4>
           </div>
           <div>
-            <h3>Bachelor of Science in Computer Science (Starting Fall / Winter 2026)</h3>
+            <h3>Bachelor of Science in Computer Science (Starting 2027)</h3>
             <p className="opaque-text">
               Learning programming such as Java, C++, data structures, and algorithms, along with
               core concepts in systems, databases, and software engineering. It also includes math
