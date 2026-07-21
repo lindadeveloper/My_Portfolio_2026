@@ -864,7 +864,7 @@ i {
   }
 
   .budgetBackground-img:hover {
-    background: linear-gradient(var(--project-bg)), url("/budgetingAppImg.jpg");
+    background: linear-gradient(var(--project-bg)), url("/budgetingAppImg.png");
   }
 
   .foodAppBackground-img:hover {
