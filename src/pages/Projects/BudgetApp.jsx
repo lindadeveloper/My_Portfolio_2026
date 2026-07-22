@@ -28,6 +28,8 @@ export default function BudgetApp() {
         <p>A budget app to track all your expenses</p>
         <span>|</span>
         <p>Team Size: 1 (solo)</p>
+        <span>|</span>
+        <p>Status: Work in progress</p>
       </div>
       <p className="p-default project-p">
         I designed and developed this budget app with a focus on intuitive UX/UI
@@ -35,13 +37,15 @@ export default function BudgetApp() {
         and conducted user research to better understand how users interact with
         the app's layout. I then refined the design and added features to
         improve usability and intuitiveness. I spent three weeks building this
-        app using only HTML, CSS, and JavaScript. This project is still a work
-        in progress.
+        app using only HTML, CSS, and JavaScript.
       </p>
-      <p className="p-default">
-        Next step: Fix the add category feature Work on backend database logic
-        Add protective layers to the log in page
-      </p>
+      <ul>
+        <h2>Next step:</h2>
+        <li>Implement switching and adding categories</li>
+        <li>Work on backend database logic</li>
+        <li>Add protective layers to the login page</li>
+        <li>Add a search feature</li>
+      </ul>
       <a href="https://budget-app-beta-lemon.vercel.app/" alt="Live Demo">
         <img src="/budgetingAppImg.png" className="preview-img" />
       </a>

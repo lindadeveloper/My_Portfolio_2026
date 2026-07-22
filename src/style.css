@@ -131,17 +131,22 @@ i {
   margin-top: 2rem;
 }
 
+h2 {
+  margin: 1rem 0;
+}
+
 .p1-home,
 .p1,
 .p2,
-.p-default {
+.p-default,
+li {
   line-height: 1.5rem;
 }
 
 .p1-home,
 .p2,
 .p1 {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   max-width: 600px;
 }
 
