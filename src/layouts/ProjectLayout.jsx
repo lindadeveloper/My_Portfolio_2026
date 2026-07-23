@@ -76,7 +76,7 @@ export default function ProjectLayout() {
             </div>
           </div>
         </Link>
-        <Link to="crypto-dashboard" className="project-btn project-lang">
+        {/* <Link to="crypto-dashboard" className="project-btn project-lang">
           <div className="project-background">
             <h2 className="project-title">Crypto Dashboard</h2>
             <div className="lang-learned-wrapper">
@@ -87,7 +87,7 @@ export default function ProjectLayout() {
               <span className="lang-learned">API requests</span>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
