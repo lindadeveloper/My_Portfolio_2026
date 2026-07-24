@@ -41,7 +41,7 @@ export default function BudgetApp() {
       </p>
       <ul>
         <h2>Next step:</h2>
-        <li>Implement switching and adding categories</li>
+        <li>Fix switching categories for selected expenses</li>
         <li>Work on backend database logic</li>
         <li>Add protective layers to the login page</li>
         <li>Add a search feature</li>
