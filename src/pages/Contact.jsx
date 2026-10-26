@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaMedium, FaYoutube } from "react-icons/fa";
 import { PiXLogo } from "react-icons/pi";
 import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import Linda2026 from "../../public/assets/Linda2026.pdf";
+import Linda2026 from "/src/assets/Linda2026.pdf";
 
 export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
@@ -37,11 +37,16 @@ export default function Contact() {
               <a href="mailto: lindacodesdev@gmail.com" className="value-text">
                 <span>{isCopied ? "Copied!" : "lindacodesdev@gmail.com"}</span>
               </a>
-              <FaRegCopy size={20} className="value-icon" title="Copy email" onClick={copyText} />
+              <FaRegCopy
+                size={20}
+                className="value-icon"
+                title="Copy email"
+                onClick={copyText}
+              />
             </div>
           </div>
 
-          <a href={Linda2026} className="links-container">
+          <a href={Linda2026} target="_blank" className="links-container">
             <p className="key-text">My Resumé</p>
             <div className="value-wrap">
               <p className="value-text">Download Resumé</p>
@@ -49,7 +54,11 @@ export default function Contact() {
             </div>
           </a>
 
-          <a href="https://github.com/lindadeveloper" className="links-container" target="_blank">
+          <a
+            href="https://github.com/lindadeveloper"
+            className="links-container"
+            target="_blank"
+          >
             <p className="key-text">
               <FaGithub size={20} className="value-icon" title="GitHub" />
               GitHub

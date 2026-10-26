@@ -47,7 +47,7 @@ export default function BudgetApp() {
         <li>Add a search feature</li>
       </ul>
       <a href="https://budget-app-beta-lemon.vercel.app/" alt="Live Demo">
-        <img src="/budgetingAppImg.png" className="preview-img" />
+        <img src="/src/assets/budgetingAppImg.png" className="preview-img" />
       </a>
     </div>
   );

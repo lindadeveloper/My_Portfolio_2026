@@ -17,8 +17,8 @@ import { MdDownload } from "react-icons/md";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
 import { FaWebflow } from "react-icons/fa6";
-import BudgetApp from "/assets/BudgetApp.png";
-import Linda2026 from "../../public/assets/Linda2026.pdf";
+import BudgetApp from "../assets/BudgetApp.png";
+import Linda2026 from "/src/assets/Linda2026.pdf";
 
 export default function Home() {
   return (
@@ -46,7 +46,13 @@ export default function Home() {
               >
                 <FaGithub size={24} />
               </a>
-              <a href={Linda2026} alt="download" title="Download resumé" className="link-icon">
+              <a
+                href={Linda2026}
+                target="_blank"
+                alt="download"
+                title="Download resumé"
+                className="link-icon"
+              >
                 <MdDownload size={24} />
               </a>
               <a
@@ -60,11 +66,12 @@ export default function Home() {
             </div>
           </div>
           <p className="p1-home">
-            I'm a <span className="em-text">Front-End Developer</span> who builds responsive,
-            user-centered interfaces that are intuitive, accessible, and effective. I focus on
-            writing clean, maintainable code, designing scalable systems, and crafting seamless
-            digital experiences that balance usability, performance, and accessibility. I am
-            available for full-time roles and freelance projects.
+            I'm a <span className="em-text">Front-End Developer</span> who
+            builds responsive, user-centered interfaces that are intuitive,
+            accessible, and effective. I focus on writing clean, maintainable
+            code, designing scalable systems, and crafting seamless digital
+            experiences that balance usability, performance, and accessibility.
+            I am available for full-time roles and freelance projects.
           </p>
           <div className="hero-btn-container">
             <Link to="about" className="hero-btn-about">

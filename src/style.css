@@ -869,11 +869,13 @@ li {
   }
 
   .budgetBackground-img:hover {
-    background: linear-gradient(var(--project-bg)), url("/budgetingAppImg.png");
+    background:
+      linear-gradient(var(--project-bg)), url("/src/assets/budgetingAppImg.png");
   }
 
   .foodAppBackground-img:hover {
-    background: linear-gradient(var(--project-bg)), url("/foodTruckAppImg.jpg");
+    background:
+      linear-gradient(var(--project-bg)), url("/src/assets/foodTruckAppImg.jpg");
   }
 
   .home,

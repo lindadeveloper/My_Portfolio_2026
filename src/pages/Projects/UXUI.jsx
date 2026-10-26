@@ -36,10 +36,10 @@ export default function UXUI() {
         href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
         alt="Live Demo"
       >
-        <img src="/foodTruckAppImg.jpg" className="preview-img" />
+        <img src="/src/assets/foodTruckAppImg.jpg" className="preview-img" />
       </a>
       <img
-        src="/assets/TheProcess.jpg"
+        src="/src/assets/assets/TheProcess.jpg"
         alt="The Process"
         className="project-img"
       />
@@ -47,33 +47,33 @@ export default function UXUI() {
       <p className="p-default">
         There were many pain points within the existing app.
       </p>
-      <a href="/assets/PainPoints.jpg" target="_blank">
+      <a href="/src/assets/PainPoints.jpg" target="_blank">
         <img
-          src="/assets/PainPoints.jpg"
+          src="/src/assets/PainPoints.jpg"
           alt="Pain Points"
           className="project-img"
         />
       </a>
       <h2>User Flow Diagram</h2>
-      <a href="/assets/UserFlow.jpg" target="_blank">
+      <a href="/src/assets/UserFlow.jpg" target="_blank">
         <img
-          src="/assets/UserFlow.jpg"
+          src="/src/assets/UserFlow.jpg"
           alt="User Flow"
           className="project-img"
         />
       </a>
       <h2>Low-Fidelity Wireframe & User Flow</h2>
-      <a href="/assets/PrimaryUserFlow.png" target="_blank">
+      <a href="/src/assets/PrimaryUserFlow.png" target="_blank">
         <img
-          src="/assets/PrimaryUserFlow.png"
+          src="/src/assets/PrimaryUserFlow.png"
           alt="Low-Fidelity Prototype"
           className="project-img"
         />
       </a>
       <h2>Mockup with New Improvements</h2>
-      <a href="/assets/HiFiUserFlow.jpg" target="_blank">
+      <a href="/src/assets/HiFiUserFlow.jpg" target="_blank">
         <img
-          src="/assets/HiFiUserFlow.jpg"
+          src="/src/assets/HiFiUserFlow.jpg"
           alt="Hi-Fidelity Prototype"
           className="project-img"
         />
@@ -88,9 +88,9 @@ export default function UXUI() {
         same page as the menu, making the group ordering process more intuitive
         and efficient.
       </p>
-      <a href="/assets/BeforeAfterUsabilityContactList.png" target="_blank">
+      <a href="/src/assets/BeforeAfterUsabilityContactList.png" target="_blank">
         <img
-          src="/assets/BeforeAfterUsabilityContactList.png"
+          src="/src/assets/BeforeAfterUsabilityContactList.png"
           alt="First Usability Testing on Contact List"
           className="project-img"
         />
@@ -104,9 +104,9 @@ export default function UXUI() {
         button from "Invite" to "Share" to reduce confusion and better reflect
         its function.
       </p>
-      <a href="/assets/BeforeAfterUsabilityInterface.png" target="_blank">
+      <a href="/src/assets/BeforeAfterUsabilityInterface.png" target="_blank">
         <img
-          src="/assets/BeforeAfterUsabilityInterface.png"
+          src="/src/assets/BeforeAfterUsabilityInterface.png"
           alt="Second Usability Testing on Contact List"
           className="project-img"
         />

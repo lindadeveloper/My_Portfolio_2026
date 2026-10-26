@@ -10,7 +10,7 @@ import {
   Mail,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import LindaAvatar from "/assets/LindaAvatar.svg";
+import LindaAvatar from "../assets/LindaAvatar.svg";
 // import { CiCircleChevUp } from "react-icons/ci";
 
 export default function Header() {
@@ -54,7 +54,11 @@ export default function Header() {
     setMenuOpen((prevMenuState) => !prevMenuState);
   }
 
-  const hamburger = menuOpen ? <X size={30} strokeWidth="1" /> : <Menu size={30} strokeWidth="1" />;
+  const hamburger = menuOpen ? (
+    <X size={30} strokeWidth="1" />
+  ) : (
+    <Menu size={30} strokeWidth="1" />
+  );
   const toggleMenu = { display: menuOpen ? "block" : "none" };
 
   return (
@@ -87,13 +91,21 @@ export default function Header() {
                 </NavLink>
               </li>
               <li className="projects">
-                <NavLink to="projects" onClick={menuToggle} className="nav-link">
+                <NavLink
+                  to="projects"
+                  onClick={menuToggle}
+                  className="nav-link"
+                >
                   <Presentation />
                   Projects
                 </NavLink>
               </li>
               <li className="education">
-                <NavLink to="education" onClick={menuToggle} className="nav-link">
+                <NavLink
+                  to="education"
+                  onClick={menuToggle}
+                  className="nav-link"
+                >
                   <GraduationCap />
                   Education
                 </NavLink>
