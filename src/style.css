@@ -292,7 +292,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.6rem 4rem;
   color: var(--main-text-color);
   text-decoration: none;
   gap: 0.5rem;
@@ -306,6 +305,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .breadcrumb {
@@ -315,7 +315,7 @@ li {
 
 .hero-h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .hero-title {
   display: flex;
@@ -711,6 +711,10 @@ li {
     justify-content: center;
   }
 
+  .nav-link {
+    padding: 2rem;
+  }
+
   .nav-menu {
     left: 0;
   }
@@ -737,8 +741,9 @@ li {
   }
 
   .nav-link {
-    padding: 2rem 4rem;
+    padding: 2rem;
   }
+
   .hero-btn-container {
     justify-content: center;
   }
@@ -786,7 +791,7 @@ li {
     justify-content: end;
   }
   .nav-link {
-    padding: 2.5rem 4rem;
+    padding: 2rem;
   }
   .hero-btn-container {
     justify-content: center;
@@ -933,8 +938,11 @@ li {
   }
 
   .hero-title {
-    flex-direction: row;
-    gap: unset;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    gap: 1rem;
+    justify-content: unset;
   }
 
   .skills-container {
