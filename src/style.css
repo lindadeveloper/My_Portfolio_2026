@@ -540,6 +540,7 @@ li {
 
 .live-demo-github-link-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   max-width: fit-content;
 }
