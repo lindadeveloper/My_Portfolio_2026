@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
-import { foodTruckAppImg } from "/src/assets/foodTruckAppImg.jpg";
-import { TheProcess } from "/src/assets/TheProcess.jpg";
-import { PainPoints } from "/src/assets/PainPoints.jpg";
-import { UserFlow } from "/src/assets/UserFlow.jpg";
-import { PrimaryUserFlow } from "/src/assets/PrimaryUserFlow.png";
-import { HiFiUserFlow } from "/src/assets/HiFiUserFlow.jpg";
-import { BeforeAfterUsabilityContactList } from "/src/assets/BeforeAfterUsabilityContactList.png";
-import { BeforeAfterUsabilityInterface } from "/src/assets/BeforeAfterUsabilityInterface.png";
+import { foodTruckAppImg } from "../../assets/foodTruckAppImg.jpg";
+import { TheProcess } from "../../assets/TheProcess.jpg";
+import { PainPoints } from "../../assets/PainPoints.jpg";
+import { UserFlow } from "../../assets/UserFlow.jpg";
+import { PrimaryUserFlow } from "../../assets/PrimaryUserFlow.png";
+import { HiFiUserFlow } from "../../assets/HiFiUserFlow.jpg";
+import { BeforeAfterUsabilityContactList } from "../../assets/BeforeAfterUsabilityContactList.png";
+import { BeforeAfterUsabilityInterface } from "../../assets/BeforeAfterUsabilityInterface.png";
 
 export default function UXUI() {
   return (
