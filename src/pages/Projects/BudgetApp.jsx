@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
-import { budgetingAppImg } from "../../assets/budgetingAppImg.png";
+import { budgetingAppImg } from "/src/assets/budgetingAppImg.png";
 
 export default function BudgetApp() {
   return (
