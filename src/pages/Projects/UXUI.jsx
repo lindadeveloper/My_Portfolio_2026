@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+import { foodTruckAppImg } from "/src/assets/foodTruckAppImg.jpg";
+import { TheProcess } from "/src/assets/TheProcess.jpg";
+import { PainPoints } from "/src/assets/PainPoints.jpg";
+import { UserFlow } from "/src/assets/UserFlow.jpg";
+import { PrimaryUserFlow } from "/src/assets/PrimaryUserFlow.png";
+import { HiFiUserFlow } from "/src/assets/HiFiUserFlow.jpg";
+import { BeforeAfterUsabilityContactList } from "/src/assets/BeforeAfterUsabilityContactList.png";
+import { BeforeAfterUsabilityInterface } from "/src/assets/BeforeAfterUsabilityInterface.png";
 
 export default function UXUI() {
   return (
@@ -36,44 +44,32 @@ export default function UXUI() {
         href="https://www.figma.com/proto/oOq8ZU8ORzTMxDpe8Om7DG/Food-Truck-app---March-17--2022?t=urLseGPFotoZFtI9-1&scaling=scale-down&content-scaling=fixed&page-id=329%3A2528&node-id=406-7663&starting-point-node-id=406%3A7663"
         alt="Live Demo"
       >
-        <img src="/src/assets/foodTruckAppImg.jpg" className="preview-img" />
+        <img src={foodTruckAppImg} className="preview-img" />
       </a>
-      <img
-        src="/src/assets/assets/TheProcess.jpg"
-        alt="The Process"
-        className="project-img"
-      />
+      <img src={TheProcess} alt="The Process" className="project-img" />
       <h2>Existing App Research</h2>
       <p className="p-default">
         There were many pain points within the existing app.
       </p>
-      <a href="/src/assets/PainPoints.jpg" target="_blank">
-        <img
-          src="/src/assets/PainPoints.jpg"
-          alt="Pain Points"
-          className="project-img"
-        />
+      <a href={PainPoints} target="_blank">
+        <img src={PainPoints} alt="Pain Points" className="project-img" />
       </a>
       <h2>User Flow Diagram</h2>
-      <a href="/src/assets/UserFlow.jpg" target="_blank">
-        <img
-          src="/src/assets/UserFlow.jpg"
-          alt="User Flow"
-          className="project-img"
-        />
+      <a href={UserFlow} target="_blank">
+        <img src={UserFlow} alt="User Flow" className="project-img" />
       </a>
       <h2>Low-Fidelity Wireframe & User Flow</h2>
-      <a href="/src/assets/PrimaryUserFlow.png" target="_blank">
+      <a href={PrimaryUserFlow} target="_blank">
         <img
-          src="/src/assets/PrimaryUserFlow.png"
+          src={PrimaryUserFlow}
           alt="Low-Fidelity Prototype"
           className="project-img"
         />
       </a>
       <h2>Mockup with New Improvements</h2>
-      <a href="/src/assets/HiFiUserFlow.jpg" target="_blank">
+      <a href={HiFiUserFlow} target="_blank">
         <img
-          src="/src/assets/HiFiUserFlow.jpg"
+          src={HiFiUserFlow}
           alt="Hi-Fidelity Prototype"
           className="project-img"
         />
@@ -88,9 +84,9 @@ export default function UXUI() {
         same page as the menu, making the group ordering process more intuitive
         and efficient.
       </p>
-      <a href="/src/assets/BeforeAfterUsabilityContactList.png" target="_blank">
+      <a href={BeforeAfterUsabilityContactList} target="_blank">
         <img
-          src="/src/assets/BeforeAfterUsabilityContactList.png"
+          src={BeforeAfterUsabilityContactList}
           alt="First Usability Testing on Contact List"
           className="project-img"
         />
@@ -104,9 +100,9 @@ export default function UXUI() {
         button from "Invite" to "Share" to reduce confusion and better reflect
         its function.
       </p>
-      <a href="/src/assets/BeforeAfterUsabilityInterface.png" target="_blank">
+      <a href={BeforeAfterUsabilityInterface} target="_blank">
         <img
-          src="/src/assets/BeforeAfterUsabilityInterface.png"
+          src={BeforeAfterUsabilityInterface}
           alt="Second Usability Testing on Contact List"
           className="project-img"
         />
