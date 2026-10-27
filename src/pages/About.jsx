@@ -2,7 +2,7 @@
 import { Send, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import LindaProfile from "../assets/LindaProfile.svg";
+import LindaProfile from "/assets/LindaProfile.svg";
 
 export default function About() {
   const [isCopied, setIsCopied] = useState(false);
@@ -46,30 +46,21 @@ export default function About() {
         <div className="about-content">
           <h1>About me</h1>
           <p className="p1">
-            I’m a lifelong learner who continuously improves her skills by
-            staying consistent, being accountable, and self-motivated. I enjoy
-            solving complex problems, optimizing performance, and exploring new
-            technologies to build better products. I also have experience in
-            e-commerce and a strong eye for design.
+            I’m a lifelong learner who continuously improves her skills by staying consistent, being
+            accountable, and self-motivated. I enjoy solving complex problems, optimizing
+            performance, and exploring new technologies to build better products. I also have
+            experience in e-commerce and a strong eye for design.
           </p>
           <p className="p2">
-            When I’m not coding, you’ll probably find me walking in nature with
-            my dog or trying out new vegetarian recipes. I believe that
-            curiosity, persistence, and a little fun go a long way in life and
-            in software development.🙂
+            When I’m not coding, you’ll probably find me walking in nature with my dog or trying out
+            new vegetarian recipes. I believe that curiosity, persistence, and a little fun go a
+            long way in life and in software development.🙂
           </p>
         </div>
         <h2>Let's chat! </h2>
-        <button
-          className="email-btn"
-          alt="e-mail"
-          title="Copy e-mail"
-          onClick={copyText}
-        >
+        <button className="email-btn" alt="e-mail" title="Copy e-mail" onClick={copyText}>
           <Send />
-          <span className="email">
-            {isCopied ? "Copied!" : "lindacodesdev@gmail.com"}
-          </span>
+          <span className="email">{isCopied ? "Copied!" : "lindacodesdev@gmail.com"}</span>
         </button>
       </div>
     </section>

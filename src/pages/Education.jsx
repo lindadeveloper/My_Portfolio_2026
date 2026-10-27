@@ -2,10 +2,10 @@ import { PiCertificate } from "react-icons/pi";
 import { FaGlobe } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
-import CourseraLogo from "../assets/CourseraLogo.svg";
-import ScrimbaLogo from "../assets/ScrimbaLogo.svg";
-import UdacityLogo from "../assets/UdacityLogo.svg";
-import WGULogo from "../assets/WGULogo.png";
+import CourseraLogo from "/assets/CourseraLogo.svg";
+import ScrimbaLogo from "/assets/ScrimbaLogo.svg";
+import UdacityLogo from "/assets/UdacityLogo.svg";
+import WGULogo from "/assets/WGULogo.png";
 
 export default function Education() {
   return (
@@ -33,15 +33,12 @@ export default function Education() {
             <h4 className="opaque-logo-text">Scrimba</h4>
           </div>
           <div>
-            <h3>
-              Full Stack Developer Path (In Progress - Expected Summer 2026)
-            </h3>
+            <h3>Full Stack Developer Path (In Progress - Expected Summer 2026)</h3>
             <p className="opaque-text">
-              Built full-stack applications by creating REST APIs with
-              Node.js/Express and managing data with MongoDB and integrating
-              front-end interfaces with backend services. Integrated AI features
-              into applications using LLM APIs, prompt engineering, and modern
-              AI workflows.
+              Built full-stack applications by creating REST APIs with Node.js/Express and managing
+              data with MongoDB and integrating front-end interfaces with backend services.
+              Integrated AI features into applications using LLM APIs, prompt engineering, and
+              modern AI workflows.
             </p>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">React</span>
@@ -63,18 +60,10 @@ export default function Education() {
           </div>
         </div>
         <div className="certificate-globe-wrapper">
-          <a
-            href="https://scrimba.com/?via=u4217c86"
-            target="_blank"
-            className="certificate-btn"
-          >
+          <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="certificate-btn">
             <PiCertificate size={30} />
           </a>
-          <a
-            href="https://scrimba.com/?via=u4217c86"
-            target="_blank"
-            className="globe-icon"
-          >
+          <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
@@ -89,10 +78,9 @@ export default function Education() {
           <div>
             <h3>Front-End Developer Path 2025~2026</h3>
             <p className="opaque-text">
-              Designed and developed responsive web applications using HTML,
-              CSS, JavaScript, and React. Integrated APIs, managed version
-              control with Git, and deployed projects in production
-              environments.
+              Designed and developed responsive web applications using HTML, CSS, JavaScript, and
+              React. Integrated APIs, managed version control with Git, and deployed projects in
+              production environments.
             </p>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">React</span>
@@ -116,11 +104,7 @@ export default function Education() {
           >
             <PiCertificate size={30} />
           </a>
-          <a
-            href="https://scrimba.com/?via=u4217c86"
-            target="_blank"
-            className="globe-icon"
-          >
+          <a href="https://scrimba.com/?via=u4217c86" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
@@ -135,12 +119,10 @@ export default function Education() {
           <div>
             <h3>Introduction to Programming 2024</h3>
             <p className="opaque-text">
-              Built a strong foundation in programming using Python and
-              JavaScript. Gained experience with core concepts including
-              variables, data types, conditionals, loops, functions, and basic
-              data structures. Applied version control using Git and GitHub, and
-              developed hands-on projects such as simple applications and
-              interactive web pages.
+              Built a strong foundation in programming using Python and JavaScript. Gained
+              experience with core concepts including variables, data types, conditionals, loops,
+              functions, and basic data structures. Applied version control using Git and GitHub,
+              and developed hands-on projects such as simple applications and interactive web pages.
             </p>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">Python</span>
@@ -163,11 +145,7 @@ export default function Education() {
           >
             <PiCertificate size={30} />
           </a>
-          <a
-            href="https://www.udacity.com/"
-            target="_blank"
-            className="globe-icon"
-          >
+          <a href="https://www.udacity.com/" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
@@ -182,12 +160,11 @@ export default function Education() {
           <div>
             <h3>Google UX Design 2023</h3>
             <p className="opaque-text">
-              Learned the end-to-end user experience design process, from
-              empathizing with users and defining pain points to ideating,
-              prototyping, and testing solutions. Built wireframes and
-              high-fidelity prototypes in Figma while applying principles of
-              accessibility and inclusive design. Conducted user research and
-              usability testing to inform design decisions.
+              Learned the end-to-end user experience design process, from empathizing with users and
+              defining pain points to ideating, prototyping, and testing solutions. Built wireframes
+              and high-fidelity prototypes in Figma while applying principles of accessibility and
+              inclusive design. Conducted user research and usability testing to inform design
+              decisions.
             </p>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">Figma (Design Software)</span>
@@ -213,11 +190,7 @@ export default function Education() {
           >
             <PiCertificate size={30} />
           </a>
-          <a
-            href="https://www.coursera.org/"
-            target="_blank"
-            className="globe-icon"
-          >
+          <a href="https://www.coursera.org/" target="_blank" className="globe-icon">
             <FaGlobe size={20} />
           </a>
         </div>
@@ -232,11 +205,10 @@ export default function Education() {
           <div>
             <h3>Bachelor of Science in Computer Science (Starting 2027)</h3>
             <p className="opaque-text">
-              Learning programming such as Java, C++, data structures, and
-              algorithms, along with core concepts in systems, databases, and
-              software engineering. It also includes math foundations and
-              exposure to AI and networking, combining theory and practical
-              skills for software development careers.
+              Learning programming such as Java, C++, data structures, and algorithms, along with
+              core concepts in systems, databases, and software engineering. It also includes math
+              foundations and exposure to AI and networking, combining theory and practical skills
+              for software development careers.
             </p>
             <div className="lang-learned-wrapper">
               <span className="lang-learned">Algorithms</span>
@@ -257,11 +229,7 @@ export default function Education() {
           </div>
         </div>
         <div className="certificate-globe-wrapper">
-          <a
-            href="https://www.wgu.edu/"
-            target="_blank"
-            className="certificate-btn"
-          >
+          <a href="https://www.wgu.edu/" target="_blank" className="certificate-btn">
             <PiCertificate size={30} />
           </a>
           <a href="https://www.wgu.edu/" target="_blank" className="globe-icon">
